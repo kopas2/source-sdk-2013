@@ -5,7 +5,7 @@
 #include "cbase.h"
 #include "tf_weapon_lunchbox.h"
 #include "tf_fx_shared.h"
-
+#include "tf_fx.h"
 // Client specific.
 #ifdef CLIENT_DLL
 #include "c_tf_player.h"
@@ -17,6 +17,7 @@
 #include "econ_item_view.h"
 #include "econ_item_system.h"
 #include "tf_gamestats.h"
+#include "tf_fx.h"
 #endif
 
 //=============================================================================
@@ -172,6 +173,150 @@ bool CTFLunchBox::DropAllowed( void )
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
+
+/*void CTFLunchBox::PrimaryAttack(void)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return;
+
+	if (!HasAmmo())
+		return;
+*/
+
+
+// At the top of the file, add a constant that can be easily modified
+#define SANDWICH_EXPLOSION_DELAY 2.0f  // Time in seconds for explosion delay
+
+void CTFLunchBox::PrimaryAttack(void)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return;
+
+	if (!HasAmmo())
+		return;
+
+#if GAME_DLL
+	// Start the taunt animation first
+	pOwner->Taunt();
+
+	// Calculate taunt time
+	float flTauntTime = pOwner->GetTauntRemoveTime() - gpGlobals->curtime;
+
+	// Use either the full taunt time or our custom delay, whichever is shorter
+	float flDelay = MIN(flTauntTime, SANDWICH_EXPLOSION_DELAY);
+
+	// Schedule the explosion
+	SetNextThink(gpGlobals->curtime + flDelay);
+	SetThink(&CTFLunchBox::ExplodeThink);
+
+	// Set next attack time
+	m_flNextPrimaryAttack = gpGlobals->curtime + flDelay + 0.1f;
+#else
+	m_flNextPrimaryAttack = gpGlobals->curtime + 2.0f; // this will be corrected by the game server
+#endif
+}
+
+#if GAME_DLL
+void CTFLunchBox::ExplodeThink(void)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return;
+
+	// Create an explosion at the player's position
+	Vector vecOrigin = pOwner->GetAbsOrigin();
+
+	// Explosion radius
+	float flRadius = 300.0f;
+
+	// Create the explosion effect
+	CPVSFilter filter(vecOrigin);
+	TE_TFExplosion(filter, 0.0f, vecOrigin, Vector(0, 0, 1), TF_WEAPON_GRENADE_DEMOMAN, pOwner->entindex());
+
+	// Damage players within the radius
+	Vector vecForce = Vector(0, 0, 0);
+	CTakeDamageInfo info(this, pOwner, vecForce, vecOrigin, 2500.0f, DMG_BLAST);
+	EmitSound("Weapon_Slap.Audacity");
+	RadiusDamage(info, vecOrigin, flRadius, CLASS_NONE, NULL);
+
+	// Handle ammo consumption and regeneration
+	DrainAmmo(false);
+
+	// Make sure regeneration starts
+	pOwner->m_Shared.SetItemChargeMeter(LOADOUT_POSITION_SECONDARY, 0.f);
+}
+#endif
+
+
+
+
+
+
+
+
+
+/*
+void CTFLunchBox::PrimaryAttack(void)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return;
+
+	if (!HasAmmo())
+		return;
+
+#if GAME_DLL
+	// Start the taunt animation first
+	pOwner->Taunt();
+
+	// Schedule the explosion to happen at the end of the taunt animation
+	// We can use a timer to delay the explosion until the taunt is complete
+	float flTauntTime = pOwner->GetTauntRemoveTime() - gpGlobals->curtime;
+
+	// Set up a think function to create the explosion after the taunt
+	SetContextThink(&CTFLunchBox::ExplodeThink, gpGlobals->curtime + flTauntTime, "ExplodeThink");
+
+	// Set next attack time to after the taunt
+	m_flNextPrimaryAttack = pOwner->GetTauntRemoveTime() + 0.1f;
+#else
+	m_flNextPrimaryAttack = gpGlobals->curtime + 2.0f; // this will be corrected by the game server
+#endif
+}
+#if GAME_DLL
+	// Create an explosion at the player's position
+	Vector vecOrigin = pOwner->GetAbsOrigin();
+
+	// Explosion radius - modify this value to change the explosion area
+	// Current value: 300 units
+	float flRadius = 300.0f;
+
+	// Create the explosion effect
+	CPVSFilter filter(vecOrigin);
+	TE_TFExplosion(filter, 0.0f, vecOrigin, Vector(0, 0, 1), TF_WEAPON_GRENADE_DEMOMAN, pOwner->entindex());
+
+	// Damage players within the radius
+	CTakeDamageInfo info(this, pOwner, vec3_origin, vecOrigin, 300.0f, DMG_BLAST);
+	RadiusDamage(info, vecOrigin, flRadius, CLASS_NONE, NULL);
+
+	// Consume ammo
+	pOwner->RemoveAmmo(1, m_iPrimaryAmmoType);
+
+	// Set next attack time
+	m_flNextPrimaryAttack = gpGlobals->curtime + 2.0f;
+#else
+	m_flNextPrimaryAttack = gpGlobals->curtime + 2.0f; // this will be corrected by the game server
+#endif
+}
+
+*/
+
+
+
+
+
+/*
 void CTFLunchBox::PrimaryAttack( void )
 {
 	CTFPlayer *pOwner = ToTFPlayer( GetPlayerOwner() );
@@ -188,7 +333,7 @@ void CTFLunchBox::PrimaryAttack( void )
 	m_flNextPrimaryAttack = gpGlobals->curtime + 2.0f; // this will be corrected by the game server
 #endif
 }
-
+*/
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------

@@ -6,7 +6,7 @@
 
 #include "cbase.h"
 #include "tf_weapon_sword.h"
-
+#include "soundenvelope.h"
 // Client specific.
 #ifdef CLIENT_DLL
 #include "c_tf_player.h"
@@ -55,6 +55,7 @@ PRECACHE_WEAPON_REGISTER( tf_weapon_katana );
 // Decapitation melee weapon base implementation.
 //
 
+
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
@@ -69,6 +70,7 @@ CTFDecapitationMeleeWeaponBase::CTFDecapitationMeleeWeaponBase()
 void CTFDecapitationMeleeWeaponBase::Precache()
 {
 	BaseClass::Precache();
+	PrecacheScriptSound("Weapon_Sword.Edwin");
 }
 
 //-----------------------------------------------------------------------------
@@ -407,6 +409,7 @@ void CTFDecapitationMeleeWeaponBase::FireGameEvent( IGameEvent *event )
 	// Off with their heads!
 	if ( !CanDecapitate() )
 		return;
+	EmitSound("Weapon_Sword.Edwin");
 	
 	OnDecapitation( ToTFPlayer( UTIL_PlayerByUserId( event->GetInt( "userid" ) ) ) );
 }
@@ -593,6 +596,7 @@ int CTFKatana::GetActivityWeaponRole() const
 void CTFKatana::OnDecapitation( CTFPlayer *pDeadPlayer )
 {
 	BaseClass::OnDecapitation( pDeadPlayer );
+
 
 #ifndef CLIENT_DLL
 	m_bIsBloody = true;

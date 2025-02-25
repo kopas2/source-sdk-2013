@@ -9,6 +9,7 @@
 #include "particle_parse.h"
 
 #ifdef GAME_DLL
+#include "util.h"
 #include "tf_player.h"
 #else
 #include "c_tf_player.h"
@@ -24,40 +25,40 @@
 #define SLAP_SOUND_LEVEL_3		"Weapon_Slap.FireLarge"
 
 #ifdef CLIENT_DLL
-void RecvProxy_UpdateSlapKills( const CRecvProxyData *pData, void *pStruct, void *pOut );
+void RecvProxy_UpdateSlapKills(const CRecvProxyData* pData, void* pStruct, void* pOut);
 #endif
 
 //=============================================================================
 //
 // Weapon Slap tables.
 //
-IMPLEMENT_NETWORKCLASS_ALIASED( TFSlap, DT_TFWeaponSlap )
+IMPLEMENT_NETWORKCLASS_ALIASED(TFSlap, DT_TFWeaponSlap)
 
-BEGIN_NETWORK_TABLE( CTFSlap, DT_TFWeaponSlap )
+BEGIN_NETWORK_TABLE(CTFSlap, DT_TFWeaponSlap)
 #ifdef CLIENT_DLL
-	RecvPropBool( RECVINFO( m_bFirstHit ) ),
-	RecvPropInt( RECVINFO( m_nNumKills ), 0, RecvProxy_UpdateSlapKills ),
+RecvPropBool(RECVINFO(m_bFirstHit)),
+RecvPropInt(RECVINFO(m_nNumKills), 0, RecvProxy_UpdateSlapKills),
 #else
-	SendPropBool( SENDINFO( m_bFirstHit ) ),
-	SendPropInt( SENDINFO( m_nNumKills ) ),
+SendPropBool(SENDINFO(m_bFirstHit)),
+SendPropInt(SENDINFO(m_nNumKills)),
 #endif
 END_NETWORK_TABLE()
 
 #ifdef CLIENT_DLL
-BEGIN_PREDICTION_DATA( CTFSlap )
-	DEFINE_FIELD(  m_bFirstHit, FIELD_BOOLEAN ),
+BEGIN_PREDICTION_DATA(CTFSlap)
+DEFINE_FIELD(m_bFirstHit, FIELD_BOOLEAN),
 END_PREDICTION_DATA()
 #endif // CLIENT_DLL
 
-LINK_ENTITY_TO_CLASS( tf_weapon_slap, CTFSlap );
-PRECACHE_WEAPON_REGISTER( tf_weapon_slap );
+LINK_ENTITY_TO_CLASS(tf_weapon_slap, CTFSlap);
+PRECACHE_WEAPON_REGISTER(tf_weapon_slap);
 
 #ifdef CLIENT_DLL
-void RecvProxy_UpdateSlapKills( const CRecvProxyData *pData, void *pStruct, void *pOut )
+void RecvProxy_UpdateSlapKills(const CRecvProxyData* pData, void* pStruct, void* pOut)
 {
-	CTFSlap *pSlap = ( CTFSlap* )pStruct;
-	pSlap->SetNumKills( pData->m_Value.m_Int );
-//	pSlap->UpdateFireEffect();
+	CTFSlap* pSlap = (CTFSlap*)pStruct;
+	pSlap->SetNumKills(pData->m_Value.m_Int);
+	//	pSlap->UpdateFireEffect();
 }
 #endif
 
@@ -72,9 +73,9 @@ CTFSlap::CTFSlap()
 	m_nNumKills = 0;
 
 #ifdef CLIENT_DLL
-//	m_pFlameEffect = NULL;
-//	m_pFlameEffectSound = NULL;
-//	m_hEffectOwner = NULL;
+	//	m_pFlameEffect = NULL;
+	//	m_pFlameEffectSound = NULL;
+	//	m_hEffectOwner = NULL;
 #endif // CLIENT_DLL
 }
 
@@ -82,18 +83,19 @@ void CTFSlap::Precache()
 {
 	BaseClass::Precache();
 
-	PrecacheScriptSound( "Weapon_Slap.OpenHand" );
-	PrecacheScriptSound( "Weapon_Slap.BackHand" );
-	PrecacheScriptSound( "Weapon_Slap.OpenHandHitWorld" );
-	PrecacheScriptSound( "Weapon_Slap.BackHandHitWorld" );
+	PrecacheScriptSound("Weapon_Slap.OpenHand");
+	PrecacheScriptSound("Weapon_Slap.BackHand");
+	PrecacheScriptSound("Weapon_Slap.OpenHandHitWorld");
+	PrecacheScriptSound("Weapon_Slap.BackHandHitWorld");
+	PrecacheScriptSound("Weapon_Slap.Audacity");
+	// STOP
+	//	PrecacheScriptSound( SLAP_SOUND_LEVEL_1 );
+	//	PrecacheScriptSound( SLAP_SOUND_LEVEL_2 );
+	//	PrecacheScriptSound( SLAP_SOUND_LEVEL_3 );
 
-//	PrecacheScriptSound( SLAP_SOUND_LEVEL_1 );
-//	PrecacheScriptSound( SLAP_SOUND_LEVEL_2 );
-//	PrecacheScriptSound( SLAP_SOUND_LEVEL_3 );
-
-//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_1 );
-//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_2 );
-//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_3 );
+	//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_1 );
+	//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_2 );
+	//	PrecacheParticleSystem( SLAP_PARTICLE_LEVEL_3 );
 }
 
 // -----------------------------------------------------------------------------
@@ -101,7 +103,7 @@ void CTFSlap::Precache()
 // -----------------------------------------------------------------------------
 void CTFSlap::PrimaryAttack()
 {
-	if ( !CanAttack() )
+	if (!CanAttack())
 		return;
 
 	Slap();
@@ -112,7 +114,7 @@ void CTFSlap::PrimaryAttack()
 // -----------------------------------------------------------------------------
 void CTFSlap::SecondaryAttack()
 {
-	if ( !CanAttack() )
+	if (!CanAttack())
 		return;
 }
 
@@ -129,45 +131,46 @@ bool CTFSlap::Deploy()
 // -----------------------------------------------------------------------------
 // Purpose:
 // -----------------------------------------------------------------------------
-bool CTFSlap::Holster( CBaseCombatWeapon *pSwitchingTo )
+bool CTFSlap::Holster(CBaseCombatWeapon* pSwitchingTo)
 {
 	m_nNumKills = 0;
 
 #ifdef CLIENT_DLL
-//	UpdateFireEffect();
+	//	UpdateFireEffect();
 #endif // CLIENT_DLL
 
-	return BaseClass::Holster( pSwitchingTo );
+	return BaseClass::Holster(pSwitchingTo);
 }
 
 // -----------------------------------------------------------------------------
 // Purpose:
 // -----------------------------------------------------------------------------
-void CTFSlap::Smack( void )
+void CTFSlap::Smack(void)
 {
 	BaseClass::Smack();
 
-	if ( m_bFirstHit )
+	if (m_bFirstHit)
 	{
 		m_bFirstHit = false;
 		// set the 2nd smack time to do 2nd hit without animation
-		m_flSmackTime = GetSmackTime( TF_WEAPON_SECONDARY_MODE );
+		m_flSmackTime = GetSmackTime(TF_WEAPON_SECONDARY_MODE);
 	}
 }
 
 // -----------------------------------------------------------------------------
 // Purpose:
 // -----------------------------------------------------------------------------
-void CTFSlap::Slap( void )
+void CTFSlap::Slap(void)
 {
 	// Get the current player.
-	CTFPlayer *pPlayer = GetTFPlayerOwner();
-	if ( !pPlayer )
+	CTFPlayer* pPlayer = GetTFPlayerOwner();
+	if (!pPlayer)
 		return;
 
 	// Swing the weapon.
 	m_bFirstHit = true;
-	Swing( pPlayer );
+	Swing(pPlayer);
+	
 
 	m_flNextSecondaryAttack = m_flNextPrimaryAttack;
 }
@@ -176,24 +179,24 @@ void CTFSlap::Slap( void )
 // Purpose: 
 // Input  : *pPlayer - 
 //-----------------------------------------------------------------------------
-void CTFSlap::PlaySwingSound( void )
+void CTFSlap::PlaySwingSound(void)
 {
-//	if ( IsCurrentAttackACrit() )
-//	{
-//		WeaponSound( ( m_nNumKills > 0 ) ? SPECIAL2: BURST );
-//	}
-//	else
-//	{
-//		WeaponSound( ( m_nNumKills > 0 ) ? SPECIAL1 : MELEE_MISS );
-//	}
+	//	if ( IsCurrentAttackACrit() )
+	//	{
+	//		WeaponSound( ( m_nNumKills > 0 ) ? SPECIAL2: BURST );
+	//	}
+	//	else
+	//	{
+	//		WeaponSound( ( m_nNumKills > 0 ) ? SPECIAL1 : MELEE_MISS );
+	//	}
 
-	if ( IsCurrentAttackACrit() )
+	if (IsCurrentAttackACrit())
 	{
-		WeaponSound( BURST );
+		WeaponSound(BURST);
 	}
 	else
 	{
-		WeaponSound( MELEE_MISS );
+		WeaponSound(MELEE_MISS);
 	}
 }
 
@@ -201,60 +204,66 @@ void CTFSlap::PlaySwingSound( void )
 // Purpose: Allow melee weapons to send different anim events
 // Input  :  - 
 //-----------------------------------------------------------------------------
-void CTFSlap::SendPlayerAnimEvent( CTFPlayer *pPlayer )
+void CTFSlap::SendPlayerAnimEvent(CTFPlayer* pPlayer)
 {
-	pPlayer->DoAnimationEvent( PLAYERANIMEVENT_ATTACK_PRIMARY );
+	pPlayer->DoAnimationEvent(PLAYERANIMEVENT_ATTACK_PRIMARY);
 }
 
 #ifdef GAME_DLL
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CTFSlap::OnEntityHit( CBaseEntity *pEntity, CTakeDamageInfo *info )
+void CTFSlap::OnEntityHit(CBaseEntity* pEntity, CTakeDamageInfo* info)
 {
 }
 
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CTFSlap::OnPlayerKill( CTFPlayer *pVictim, const CTakeDamageInfo &info )
+void CTFSlap::OnPlayerKill(CTFPlayer* pVictim, const CTakeDamageInfo& info)
 {
-	BaseClass::OnPlayerKill( pVictim, info );
-
+	BaseClass::OnPlayerKill(pVictim, info);
 	m_nNumKills++;
+	engine->ServerCommand("say the audacity.\n");
+	CTFPlayer* pAttacker = GetTFPlayerOwner();
+	if (pAttacker)
+	{
+		pAttacker->EmitSound("Weapon_Slap.Audacity");
+		UTIL_ScreenShake(pAttacker->GetAbsOrigin(), 50.0f, 150.0f, 2.0f, 1000.0f, SHAKE_START);
+	}
 }
 #endif
 
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-char const *CTFSlap::GetShootSound( int iIndex ) const
+char const* CTFSlap::GetShootSound(int iIndex) const
 {
-	if ( iIndex == MELEE_HIT )
+	if (iIndex == MELEE_HIT)
 	{
 		return m_bFirstHit ? "Weapon_Slap.OpenHand" : "Weapon_Slap.BackHand";
 	}
-	else if ( iIndex == MELEE_HIT_WORLD )
+	else if (iIndex == MELEE_HIT_WORLD)
 	{
 		return m_bFirstHit ? "Weapon_Slap.OpenHandHitWorld" : "Weapon_Slap.BackHandHitWorld";
 	}
 
-	return BaseClass::GetShootSound( iIndex );
+	return BaseClass::GetShootSound(iIndex);
 }
 
 #ifdef CLIENT_DLL
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CTFSlap::UpdateVisibility( void )
+void CTFSlap::UpdateVisibility(void)
 {
 	BaseClass::UpdateVisibility();
-//	UpdateFireEffect();
+	//	UpdateFireEffect();
 }
 
 /*
 //-----------------------------------------------------------------------------
-// Purpose: 
+// Purpose:
 //-----------------------------------------------------------------------------
 void CTFSlap::StartFlameEffects( void )
 {
@@ -317,7 +326,7 @@ void CTFSlap::StartFlameEffects( void )
 }
 
 //-----------------------------------------------------------------------------
-// Purpose: 
+// Purpose:
 //-----------------------------------------------------------------------------
 void CTFSlap::StopFlameEffects( void )
 {
@@ -336,7 +345,7 @@ void CTFSlap::StopFlameEffects( void )
 }
 
 //-----------------------------------------------------------------------------
-// Purpose: 
+// Purpose:
 //-----------------------------------------------------------------------------
 void CTFSlap::UpdateFireEffect( void )
 {

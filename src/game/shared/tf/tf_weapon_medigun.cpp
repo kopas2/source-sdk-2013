@@ -921,6 +921,94 @@ bool CWeaponMedigun::IsAttachedToBuilding( void )
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
+
+
+
+void CWeaponMedigun::HealTargetThink(void)
+{
+	// Verify that we still have a valid heal target.
+	CBaseEntity* pTarget = m_hHealingTarget;
+	if (!pTarget || !pTarget->IsAlive())
+	{
+		SetContextThink(NULL, 0, s_pszMedigunHealTargetThink);
+		return;
+	}
+
+	CTFPlayer* pOwner = ToTFPlayer(GetOwnerEntity());
+	if (!pOwner)
+		return;
+
+	float flTime = gpGlobals->curtime - pOwner->GetTimeBase();
+	if (flTime > 5.0f || !AllowedToHealTarget(pTarget))
+	{
+		RemoveHealingTarget(true);
+	}
+
+	// Ensure the target is a player and apply shrinking effect
+	CTFPlayer* pTFTarget = ToTFPlayer(pTarget);
+	if (pTFTarget)
+	{
+		int nPrevClass = m_nHealTargetClass;
+		m_nHealTargetClass = pTFTarget->GetPlayerClass()->GetClassIndex();
+		if (m_nHealTargetClass != nPrevClass)
+		{
+			pOwner->TeamFortress_SetSpeed();
+
+			// Do this so the medic has to re-attach, which causes a re-evaluation of any attributes that may have changed on the target
+			if (m_hHealingTarget.Get() == m_hLastHealingTarget.Get())
+			{
+				Lower();
+			}
+		}
+
+		// Shrink the player continuously
+		float flNewScale = pTFTarget->GetModelScale() * 0.99f; // Shrink by 1% per tick
+		flNewScale = MAX(flNewScale, 0.5f); // Prevent shrinking below 50% of normal size
+		pTFTarget->SetModelScale(flNewScale, 0.1f); // Smooth transition over 0.1 seconds
+	}
+
+	// Check if the target is a revive marker
+	if (!pTarget->IsPlayer())
+	{
+		CTFReviveMarker* pReviveMarker = dynamic_cast<CTFReviveMarker*>(pTarget);
+		if (pReviveMarker)
+		{
+			CTFPlayer* pDeadPlayer = pReviveMarker->GetOwner();
+			if (pDeadPlayer)
+			{
+				pReviveMarker->SetReviver(pOwner);
+
+				// Instantly revive players when deploying uber
+				float flHealRate = GetHealRate();
+				float flReviveRate = m_bChargeRelease ? flHealRate / 2.f : flHealRate / 8.f;
+				pReviveMarker->AddMarkerHealth(flReviveRate);
+
+				// Set observer target to reviver so they know they're being revived
+				if (pDeadPlayer->GetObserverMode() > OBS_MODE_FREEZECAM)
+				{
+					if (pReviveMarker->GetReviver() && pDeadPlayer->GetObserverTarget() != pReviveMarker->GetReviver())
+					{
+						pDeadPlayer->SetObserverTarget(pReviveMarker->GetReviver());
+					}
+				}
+
+				if (!pReviveMarker->HasOwnerBeenPrompted())
+				{
+					// This will give them a messagebox that has a Cancel button
+					pReviveMarker->PromptOwner();
+				}
+			}
+		}
+	}
+
+	SetNextThink(gpGlobals->curtime + 0.2f, s_pszMedigunHealTargetThink);
+}
+
+
+
+
+
+/*  ORIGINAL CODE
 void CWeaponMedigun::HealTargetThink( void )
 {	
 	// Verify that we still have a valid heal target.
@@ -995,10 +1083,42 @@ void CWeaponMedigun::HealTargetThink( void )
 
 	SetNextThink( gpGlobals->curtime + 0.2f, s_pszMedigunHealTargetThink );
 }
-
+*/
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
+
+
+void CWeaponMedigun::StartHealingTarget(CBaseEntity* pTarget)
+{
+	CTFPlayer* pTFTarget = ToTFPlayer(pTarget);
+	if (!pTFTarget)
+		return;
+
+	CTFPlayer* pOwner = ToTFPlayer(GetOwnerEntity());
+	if (!pOwner)
+		return;
+
+	float flOverhealBonus = GetOverHealBonus(pTFTarget);
+	float flOverhealDecayMult = GetOverHealDecayMult(pTFTarget);
+	pTFTarget->m_Shared.Heal(pOwner, GetHealRate(), flOverhealBonus, flOverhealDecayMult);
+
+	// Shrink the player when healing
+	float flNewScale = pTFTarget->GetModelScale() * 0.98f; // Shrink by 2% per heal tick
+	flNewScale = MAX(flNewScale, 0.5f); // Prevent shrinking below 50% of original size
+	pTFTarget->SetModelScale(flNewScale, 0.2f); // Apply scale change smoothly over 0.2 seconds
+
+	// Add on the small passive resist when we attach onto a target
+	if (GetMedigunType() == MEDIGUN_RESIST)
+	{
+		pTFTarget->m_Shared.AddCond(g_MedigunResistConditions[GetResistType()].passiveCond, PERMANENT_CONDITION, pOwner);
+		pOwner->m_Shared.AddCond(g_MedigunResistConditions[GetResistType()].passiveCond, PERMANENT_CONDITION, pOwner);
+	}
+}
+
+
+
+/* ORIGINAL CODE
 void CWeaponMedigun::StartHealingTarget( CBaseEntity *pTarget )
 {
 	CTFPlayer *pTFTarget = ToTFPlayer( pTarget );
@@ -1020,6 +1140,7 @@ void CWeaponMedigun::StartHealingTarget( CBaseEntity *pTarget )
 		pOwner->m_Shared.AddCond( g_MedigunResistConditions[ GetResistType() ].passiveCond, PERMANENT_CONDITION, pOwner );
 	}
 }
+*/
 
 //-----------------------------------------------------------------------------
 // Purpose: QuickFix uber heals the target and medic

@@ -105,10 +105,35 @@ void CTFKnife::WeaponReset( void )
 
 
 //-----------------------------------------------------------------------------
-bool CTFKnife::DoSwingTrace( trace_t &trace )
+/*bool CTFKnife::DoSwingTrace(trace_t& trace)
 {
 	return BaseClass::DoSwingTrace( trace );
 }
+*/
+bool CTFKnife::DoSwingTrace(trace_t& trace)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return false;
+
+	trace_t tempTrace;
+
+	// Start trace from the Spy's eye position (where they are looking from)
+	Vector vecSrc = pOwner->EyePosition();
+	Vector vecForward;
+	AngleVectors(pOwner->EyeAngles(), &vecForward);
+
+	// EXTEND backstab range (default melee is ~72, this makes it 250) -Written by GPT <3
+	Vector vecEnd = vecSrc + (vecForward * 1200.0f);
+
+	// Expand the trace hull to make backstabs even more forgiving
+	UTIL_TraceHull(vecSrc, vecEnd, Vector(-10, -10, -10), Vector(10, 10, 10),
+		MASK_SHOT_HULL, pOwner, COLLISION_GROUP_NONE, &tempTrace);
+
+	trace = tempTrace;
+	return (trace.fraction < 1.0f); // Returns true if it hits something
+}
+
 
 
 #ifdef GAME_DLL
@@ -187,8 +212,10 @@ void CTFKnife::PrimaryAttack( void )
 	int iBackstabVictimHealth = 0;
 	int nBackStabVictimRuneType = 0;
 
+
 #if !defined (CLIENT_DLL)
 	// Move other players back to history positions based on local player's lag
+
 	lagcompensation->StartLagCompensation( pPlayer, pPlayer->GetCurrentCommand() );
 #endif
 
@@ -202,6 +229,29 @@ void CTFKnife::PrimaryAttack( void )
 
 			if ( pTarget && pTarget->GetTeamNumber() != pPlayer->GetTeamNumber() )
 			{
+
+
+				if (CanPerformBackstabAgainstTarget(pTarget))
+				{
+					m_hBackstabVictim.Set(pTarget);
+
+#if !defined (CLIENT_DLL) // Ensure this only runs on the server, this ensures whatever range it is, it kills
+					CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner()); // Correctly get Spy (owner)
+					if (pOwner && pTarget && pTarget->IsAlive())
+					{
+						float flForcedDamage = pTarget->GetHealth() * 2;
+
+						// Create damage info and apply it to the target
+						CTakeDamageInfo info(pOwner, pOwner, flForcedDamage, DMG_SLASH | DMG_CRITICAL);
+						info.SetDamageCustom(TF_DMG_CUSTOM_BACKSTAB);
+
+						pTarget->TakeDamage(info); // Force the kill
+					}
+#endif
+				}
+
+
+				/*
 				// Deal extra damage to players when stabbing them from behind
 				if ( CanPerformBackstabAgainstTarget( pTarget ) )
 				{
@@ -210,6 +260,7 @@ void CTFKnife::PrimaryAttack( void )
 					iBackstabVictimHealth = Max( m_hBackstabVictim->GetHealth(), 75 );
 					nBackStabVictimRuneType = m_hBackstabVictim->m_Shared.GetCarryingRuneType();
 				}
+				*/
 			}
 		} 
 	}
@@ -345,6 +396,34 @@ bool CTFKnife::ShouldDisguiseOnBackstab()
 //-----------------------------------------------------------------------------
 // Purpose: Do backstab damage
 //-----------------------------------------------------------------------------
+float CTFKnife::GetMeleeDamage(CBaseEntity* pTarget, int* piDamageType, int* piCustomDamage)
+{
+	float flBaseDamage = BaseClass::GetMeleeDamage(pTarget, piDamageType, piCustomDamage);
+	CTFPlayer* pTFOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pTFOwner || !pTarget || !pTarget->IsPlayer())
+		return 0.0f;
+
+	// FORCE backstabs to apply regardless of distance
+	if (IsBackstab() || IsBehindAndFacingTarget(ToTFPlayer(pTarget)))
+	{
+		flBaseDamage = pTarget->GetHealth() * 2; // Guaranteed kill
+		*piCustomDamage = TF_DMG_CUSTOM_BACKSTAB;
+	}
+
+	return flBaseDamage;
+}
+
+
+
+
+// Old code below.
+
+
+
+
+
+
+/*
 float CTFKnife::GetMeleeDamage( CBaseEntity *pTarget, int* piDamageType, int* piCustomDamage )
 {
 	float flBaseDamage = BaseClass::GetMeleeDamage( pTarget, piDamageType, piCustomDamage );
@@ -392,7 +471,7 @@ float CTFKnife::GetMeleeDamage( CBaseEntity *pTarget, int* piDamageType, int* pi
 
 	return flBaseDamage;
 }
-
+*/ // Old code.
 //-----------------------------------------------------------------------------
 // Purpose: Are we in a backstab position?
 //-----------------------------------------------------------------------------
@@ -444,7 +523,45 @@ bool CTFKnife::CanPerformBackstabAgainstTarget( CTFPlayer *pTarget )
 //-----------------------------------------------------------------------------
 // Purpose: Determine if we are reasonably facing our target.
 //-----------------------------------------------------------------------------
-bool CTFKnife::IsBehindAndFacingTarget( CTFPlayer *pTarget )
+
+bool CTFKnife::IsBehindAndFacingTarget(CTFPlayer* pTarget)
+{
+	CTFPlayer* pOwner = ToTFPlayer(GetPlayerOwner());
+	if (!pOwner)
+		return false;
+
+	// Get a vector from owner origin to target origin
+	Vector vecToTarget;
+	vecToTarget = pTarget->WorldSpaceCenter() - pOwner->WorldSpaceCenter();
+	vecToTarget.z = 0.0f; // Completely ignore height difference
+	vecToTarget.NormalizeInPlace();
+
+	// Get owner forward view vector
+	Vector vecOwnerForward;
+	AngleVectors(pOwner->EyeAngles(), &vecOwnerForward, NULL, NULL);
+	vecOwnerForward.z = 0.0f;
+	vecOwnerForward.NormalizeInPlace();
+
+	// Get target forward view vector
+	Vector vecTargetForward;
+	AngleVectors(pTarget->EyeAngles(), &vecTargetForward, NULL, NULL);
+	vecTargetForward.z = 0.0f;
+	vecTargetForward.NormalizeInPlace();
+
+	// Extremely lenient dot product thresholds - almost allowing full side stabs
+	float flPosVsTargetViewDot = DotProduct(vecToTarget, vecTargetForward);    // Can backstab from side now
+	float flPosVsOwnerViewDot = DotProduct(vecToTarget, vecOwnerForward);      // Much less strict aiming requirement
+	float flViewAnglesDot = DotProduct(vecTargetForward, vecOwnerForward);     // Almost allows frontstabs in some cases
+
+	// Debug
+	// NDebugOverlay::HorzArrow( pTarget->WorldSpaceCenter(), pTarget->WorldSpaceCenter() + 50.0f * vecTargetForward, 5.0f, 0, 255, 0, 255, true, NDEBUG_PERSIST_TILL_NEXT_SERVER );
+	// NDebugOverlay::HorzArrow( pOwner->WorldSpaceCenter(), pOwner->WorldSpaceCenter() + 50.0f * vecOwnerForward, 5.0f, 0, 255, 0, 255, true, NDEBUG_PERSIST_TILL_NEXT_SERVER );
+	// DevMsg( "PosDot: %3.2f FacingDot: %3.2f AnglesDot: %3.2f\n", flPosVsTargetViewDot, flPosVsOwnerViewDot, flViewAnglesDot );
+
+	// Extremely lenient condition - you can now backstab from almost any angle except directly in front
+	return (flPosVsTargetViewDot > -0.5f && flPosVsOwnerViewDot > 0.1f && flViewAnglesDot > -0.9f);
+}
+/*bool CTFKnife::IsBehindAndFacingTarget(CTFPlayer* pTarget)
 {
 	CTFPlayer *pOwner = ToTFPlayer( GetPlayerOwner() );
 	if ( !pOwner )
@@ -452,20 +569,20 @@ bool CTFKnife::IsBehindAndFacingTarget( CTFPlayer *pTarget )
 
 	// Get a vector from owner origin to target origin
 	Vector vecToTarget;
-	vecToTarget = pTarget->WorldSpaceCenter() - pOwner->WorldSpaceCenter();
-	vecToTarget.z = 0.0f;
-	vecToTarget.NormalizeInPlace();
+	vecToTarget = (pTarget->WorldSpaceCenter() - pOwner->WorldSpaceCenter()) * 50.0f; // Increase range
+	vecToTarget.z = 5.0f;
+
 
 	// Get owner forward view vector
 	Vector vecOwnerForward;
 	AngleVectors( pOwner->EyeAngles(), &vecOwnerForward, NULL, NULL );
-	vecOwnerForward.z = 0.0f;
+	vecOwnerForward.z = 5.0f;
 	vecOwnerForward.NormalizeInPlace();
 
 	// Get target forward view vector
 	Vector vecTargetForward;
 	AngleVectors( pTarget->EyeAngles(), &vecTargetForward, NULL, NULL );
-	vecTargetForward.z = 0.0f;
+	vecTargetForward.z = 5.0f;
 	vecTargetForward.NormalizeInPlace();
 
 	// Make sure owner is behind, facing and aiming at target's back
@@ -480,7 +597,7 @@ bool CTFKnife::IsBehindAndFacingTarget( CTFPlayer *pTarget )
 
 	return ( flPosVsTargetViewDot > 0.f && flPosVsOwnerViewDot > 0.5 && flViewAnglesDot > -0.3f );
 }
-
+*/
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------

@@ -17,6 +17,11 @@
 #define CTFLunchBox_Drink C_TFLunchBox_Drink
 #endif
 
+// In the CTFLunchBox class declaration
+#ifdef GAME_DLL
+void ExplodeThink(void);
+#endif
+
 enum lunchbox_weapontypes_t
 {
 	LUNCHBOX_STANDARD = 0,		// Careful, can be the Scout BONK drink, or the Heavy sandvich.
@@ -47,6 +52,9 @@ public:
 // Server specific.
 #ifdef GAME_DLL
 	DECLARE_DATADESC();
+#endif
+#if GAME_DLL
+	void ExplodeThink(void);
 #endif
 
 	CTFLunchBox();
