@@ -5164,7 +5164,23 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	"0.25"
-	"wave"		")weapons/weapon_crit_charged_off.wav"
+	"wave"		"weapons/weapon_crit_charged_off.wav"
+}
+
+"DemoCharge.David"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/david.wav"
+}
+
+"DemoCharge.DavidScream"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/davidscream.wav"
 }
 
 // ------------------------------------------------------------------------------------ //

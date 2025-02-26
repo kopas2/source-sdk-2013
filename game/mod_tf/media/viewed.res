@@ -2,7 +2,7 @@
 {
 	"itemtest"
 	{
-		"viewed"		"97"
+		"viewed"		"120"
 	}
 	"ctf_doublecross"
 	{

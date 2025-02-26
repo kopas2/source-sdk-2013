@@ -49,9 +49,9 @@ void CTFWearableDemoShield::Precache()
 {
 	BaseClass::Precache();
 
-	PrecacheScriptSound( "DemoCharge.HitWorld" );
-	PrecacheScriptSound( "DemoCharge.HitFlesh" );
-	PrecacheScriptSound( "DemoCharge.HitFleshRange" );
+
+	PrecacheScriptSound("DemoCharge.David");
+	PrecacheScriptSound("DemoCharge.DavidScream");
 }
 
 //-----------------------------------------------------------------------------
@@ -125,7 +125,7 @@ bool CTFWearableDemoShield::CanCharge( CTFPlayer *pPlayer )
 void CTFWearableDemoShield::DoCharge( CTFPlayer *pPlayer )
 {
 #ifdef GAME_DLL
-	float flChargeTime = 1.5f;
+	float flChargeTime = 99.9f;
 	CALL_ATTRIB_HOOK_FLOAT_ON_OTHER( pPlayer, flChargeTime, mod_charge_time );
 	pPlayer->m_Shared.AddCond( TF_COND_SHIELD_CHARGE, flChargeTime );
 
@@ -168,11 +168,11 @@ void CTFWearableDemoShield::ShieldBash( CTFPlayer *pPlayer, float flCurrentCharg
 		if ( trace.m_pEnt->IsPlayer() )
 		{
 			bImpactDamage = true;
-			pszSoundName = "DemoCharge.HitFleshRange";
+			pszSoundName = "DemoCharge.DavidScream";
 		}
 		else
 		{
-			pszSoundName = "DemoCharge.HitWorld";
+			pszSoundName = "DemoCharge.DavidScream";
 		}
 		pOwner->EmitSound( pszSoundName );
 	}
