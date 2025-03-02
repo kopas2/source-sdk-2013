@@ -125,7 +125,7 @@ bool CTFWearableDemoShield::CanCharge( CTFPlayer *pPlayer )
 void CTFWearableDemoShield::DoCharge( CTFPlayer *pPlayer )
 {
 #ifdef GAME_DLL
-	float flChargeTime = 99.9f;
+	float flChargeTime = 80.0f;
 	CALL_ATTRIB_HOOK_FLOAT_ON_OTHER( pPlayer, flChargeTime, mod_charge_time );
 	pPlayer->m_Shared.AddCond( TF_COND_SHIELD_CHARGE, flChargeTime );
 
@@ -210,17 +210,17 @@ void CTFWearableDemoShield::ShieldBash( CTFPlayer *pPlayer, float flCurrentCharg
 //-----------------------------------------------------------------------------
 float CTFWearableDemoShield::CalculateChargeDamage( float flCurrentChargeMeter )
 {
-	float flImpactDamage = RemapValClamped( flCurrentChargeMeter, 90.0f, 40.0f, 15.0f, 50.0f );
+	float flImpactDamage = RemapValClamped( flCurrentChargeMeter, 90.0f, 40.0f, 300.0f, 9999.0f );
 
 	CTFPlayer *pOwner = ToTFPlayer( GetOwnerEntity() );
 	if ( !pOwner )
 		return flImpactDamage;
 
 	// Cap at 5 decapitations for dmg bonus
-	int iDecaps = Min( pOwner->m_Shared.GetDecapitations(), 5 );
+	int iDecaps = pOwner->m_Shared.GetDecapitations(); //supposed to be 5 Min(
 	if ( iDecaps > 0 )
 	{
-		flImpactDamage *= (1.0f + iDecaps * 0.1f );
+		flImpactDamage *= (9999.0f + iDecaps * 0.1f );
 	}
 
 	CALL_ATTRIB_HOOK_FLOAT_ON_OTHER( pOwner, flImpactDamage, charge_impact_damage );

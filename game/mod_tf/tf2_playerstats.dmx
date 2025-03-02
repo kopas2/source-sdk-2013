@@ -1,15 +1,15 @@
 <!-- dmx encoding keyvalues2 1 format dmx 1 -->
 "PlayerStats"
 {
-	"id" "elementid" "74629633-c1f3-4c95-91f8-5af166f546c2"
+	"id" "elementid" "dc9b9389-7592-4e32-877c-ccb854857ae3"
 	"aClassStats" "element_array" 
 	[
 		"ClassStats_t"
 		{
-			"id" "elementid" "8fb064bd-485f-4e80-bfc9-451d1169cc33"
+			"id" "elementid" "7524d70d-8b62-4264-80cc-39b11194f70e"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "331b9991-d0f2-46b9-a978-769476f8060a"
+				"id" "elementid" "48dce4cc-9f3a-4ab9-ba84-46d13e76020c"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -38,7 +38,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "3830e036-6943-4b51-97a4-77a9e73329dc"
+				"id" "elementid" "d1beadcc-bfe8-4b51-9fe2-24feca24a48d"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -70,7 +70,7 @@
 			"iPlayerClass" "int" "1"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "3981f7fa-58f4-48c1-9459-10eff84d487d"
+				"id" "elementid" "3c2d4c41-1278-485a-9ef7-770813b452f4"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -99,7 +99,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "ad954f1c-0db5-4814-a098-09e1670f30f7"
+				"id" "elementid" "086760c2-5a1a-40d6-8922-9fb851349c1f"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -129,10 +129,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "dbe83091-ed0c-4a17-8c5d-f6d544d9e73e"
+			"id" "elementid" "452e0ef4-da84-4c89-ae7c-670c3262ff68"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "1fb46cc6-a442-4a0a-976c-a3c9ad86d723"
+				"id" "elementid" "d10ac02b-76d5-4475-84e6-52b7f221485d"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -161,7 +161,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "4631d4a9-42e4-4f61-bb13-5b7616aa5b11"
+				"id" "elementid" "c53bfd70-6df4-49b2-a487-204cd72dd2ef"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -193,7 +193,7 @@
 			"iPlayerClass" "int" "2"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "e20b2394-1c36-462e-a0e5-137eae638d5b"
+				"id" "elementid" "bcf63e4f-fdd3-4eca-ad25-e0e37ee55026"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -222,7 +222,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "48d73a1f-74f8-4e3a-b5d1-b9f8675f6afa"
+				"id" "elementid" "45bceb31-fa23-4286-8b29-f60ea722c0ae"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -252,10 +252,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "c6b25a3d-dfc6-4dda-9f80-cb190c221b99"
+			"id" "elementid" "8fea2bf3-84eb-435d-ab78-b037e7a0547e"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "460b58ab-3eb4-4088-8669-fa88bde9a4b2"
+				"id" "elementid" "5a082b0f-927a-418f-8410-451f08a312a4"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -271,10 +271,10 @@
 				"iNumberOfKills" "int" "0"
 				"iNumDeaths" "int" "0"
 				"iNumInvulnerable" "int" "0"
-				"iNumShotsFired" "int" "0"
+				"iNumShotsFired" "int" "8"
 				"iNumShotsHit" "int" "0"
 				"iNumTeleports" "int" "0"
-				"iPlayTime" "int" "0"
+				"iPlayTime" "int" "93"
 				"iPointCaptures" "int" "0"
 				"iPointDefenses" "int" "0"
 				"iPointsScored" "int" "0"
@@ -284,7 +284,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "1715729a-a633-49e8-8306-efd2727f19ce"
+				"id" "elementid" "d8851708-bce2-4140-a3f6-be78e69042ac"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -312,11 +312,11 @@
 			}
 			
 			"comment: classname" "string" "Soldier"
-			"iNumberOfRounds" "int" "0"
+			"iNumberOfRounds" "int" "3"
 			"iPlayerClass" "int" "3"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "62ebf0fa-801d-4907-af04-cd399966a8b8"
+				"id" "elementid" "0b4e5512-d28d-4626-ad89-dd26d91acb32"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -335,7 +335,7 @@
 				"iNumShotsFired" "int" "0"
 				"iNumShotsHit" "int" "0"
 				"iNumTeleports" "int" "0"
-				"iPlayTime" "int" "0"
+				"iPlayTime" "int" "93"
 				"iPointCaptures" "int" "0"
 				"iPointDefenses" "int" "0"
 				"iPointsScored" "int" "0"
@@ -345,7 +345,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "dbf2f00c-29c0-4da1-a89e-c281f77e7e2e"
+				"id" "elementid" "ed098a5a-1d5e-442a-8fdc-96a9413cec47"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -375,10 +375,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "be5a6d30-48fc-44cb-a62e-d752c1ba1e04"
+			"id" "elementid" "891b134b-d0c2-4746-aa5f-cf0ce59c1ee5"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "20d529e2-5292-4ab8-89a1-a8b902280ac5"
+				"id" "elementid" "effe9760-e97f-4ae1-8fa9-bbce2aff6280"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -407,7 +407,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "513352ca-f363-4fd1-a22c-2bebceb2e94d"
+				"id" "elementid" "6144edc9-7d0e-488b-b012-e8061d65b227"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -439,7 +439,7 @@
 			"iPlayerClass" "int" "4"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "c31f8b91-80af-49ff-b2b1-01ff09890ae5"
+				"id" "elementid" "28fb7bcd-6a7c-41aa-ae70-8dcc329c721e"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -468,7 +468,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "88b61c83-2eb5-4f84-b0b9-a2712e5523fe"
+				"id" "elementid" "484d0690-45fe-49dc-a995-0bdc391b8bf9"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -498,10 +498,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "27ecd76f-3f88-46f9-8fca-77d2d689d7cc"
+			"id" "elementid" "274e8e6c-0326-4a0b-a4c3-4dda23e0d150"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "a930b144-5c42-4522-bf7e-0fa4b0f4fcf7"
+				"id" "elementid" "60b66a14-4784-416a-b315-6390acb64030"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -530,7 +530,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "2be38313-09a3-41a5-aaf1-0e53baa8f87b"
+				"id" "elementid" "0bd3beb9-2232-4c40-b487-6ae38bf6582e"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -562,7 +562,7 @@
 			"iPlayerClass" "int" "5"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "dce76fc9-3e55-4ce5-b1c4-a2a1a85fd27b"
+				"id" "elementid" "ad6f53d3-9ea3-4792-b2dc-7f8adeef21fc"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -591,7 +591,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "4426dda6-1238-48bd-bb40-66d0f69e305a"
+				"id" "elementid" "c63ece47-6792-437a-89ba-2e939eb410d7"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -621,10 +621,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "4e96cefe-062c-42f0-8b85-fdf73f2fe308"
+			"id" "elementid" "9e94fa69-6ae4-41f0-90d5-b7189d09a4d1"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "e67d121e-0798-42e9-92ba-cf76c434e6ac"
+				"id" "elementid" "b70e7f23-bd06-41fe-bf66-3fed91a645cd"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -653,7 +653,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "a4780af0-ab37-4ab6-87ed-35fb9e6a72f4"
+				"id" "elementid" "c76c75b7-89e0-4927-8226-f7866b51c06b"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -685,7 +685,7 @@
 			"iPlayerClass" "int" "6"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "bd6b2a9b-dea1-4bd5-80cf-8f98e7ba537c"
+				"id" "elementid" "58b1bcbb-1662-4e64-8a83-f4d61a31dddc"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -714,7 +714,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "da826b92-ee98-419b-adba-ddca44d4b1ec"
+				"id" "elementid" "2960a5ff-ad1e-4c71-858e-cb9e9e4519aa"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -744,10 +744,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "4589aa85-0d87-403c-8422-f78f7cedf4e8"
+			"id" "elementid" "eefa5ef2-f3ea-4d54-9d83-f6a87e302d6e"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "7d83fb62-8f95-4943-acb7-9bb6df1dc416"
+				"id" "elementid" "113c5e8f-27f9-46eb-b0c1-f904d0881c96"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -766,7 +766,7 @@
 				"iNumShotsFired" "int" "0"
 				"iNumShotsHit" "int" "0"
 				"iNumTeleports" "int" "0"
-				"iPlayTime" "int" "0"
+				"iPlayTime" "int" "3"
 				"iPointCaptures" "int" "0"
 				"iPointDefenses" "int" "0"
 				"iPointsScored" "int" "0"
@@ -776,7 +776,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "085268be-9e07-497f-bdaf-23768edb41ab"
+				"id" "elementid" "f5ab7ae6-056f-44f5-9a85-e640b6da5d81"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -804,11 +804,11 @@
 			}
 			
 			"comment: classname" "string" "Pyro"
-			"iNumberOfRounds" "int" "9"
+			"iNumberOfRounds" "int" "11"
 			"iPlayerClass" "int" "7"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "a4b41b98-be8b-4edb-a83e-7f40bc2aec37"
+				"id" "elementid" "ad73cad1-8513-498e-ad91-5afa416dda5c"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -827,7 +827,7 @@
 				"iNumShotsFired" "int" "0"
 				"iNumShotsHit" "int" "0"
 				"iNumTeleports" "int" "0"
-				"iPlayTime" "int" "0"
+				"iPlayTime" "int" "3"
 				"iPointCaptures" "int" "0"
 				"iPointDefenses" "int" "0"
 				"iPointsScored" "int" "0"
@@ -837,7 +837,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "ea9e6829-22cc-4c35-8dd5-072a37b4f4fc"
+				"id" "elementid" "13cf17db-a741-4787-97d2-5890d952c7ca"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -867,10 +867,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "d0676f91-34d7-4cd9-bb2b-84d173e22dec"
+			"id" "elementid" "d8caa493-771f-4b4a-834e-9110ad09b37f"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "b4d5db8c-76a1-4277-bfdf-10296168c7bc"
+				"id" "elementid" "dabeb8cf-cecc-4709-8029-93bd925ec324"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -899,7 +899,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "75359f78-f3c6-4901-83b0-169408b39513"
+				"id" "elementid" "bf1ca893-8eee-4366-adef-b6d8e0c2ab5e"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -931,7 +931,7 @@
 			"iPlayerClass" "int" "8"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "ffaea865-57cd-425f-afc3-a040cb70a55d"
+				"id" "elementid" "3eb5bf11-c185-45bd-a725-bd2acc540b47"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -960,7 +960,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "0857f28b-ca1b-49d5-b45e-a1864415dc0c"
+				"id" "elementid" "cbc81b52-c74d-4b9b-a01c-a3683468f4c6"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -990,10 +990,10 @@
 		},
 		"ClassStats_t"
 		{
-			"id" "elementid" "edab15bd-d614-47c5-9a17-397f81089a6e"
+			"id" "elementid" "9daa4d92-f5cb-4a50-8347-712b4305dfce"
 			"accumulated" "RoundStats_t"
 			{
-				"id" "elementid" "57fa79f5-4f8c-4654-b301-f65b8653be76"
+				"id" "elementid" "62ef5f50-6ef6-4a4c-ae61-05932221fd81"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -1022,7 +1022,7 @@
 			
 			"accumulatedmvm" "RoundStats_t"
 			{
-				"id" "elementid" "737f11b4-e46c-487d-8a76-8a2b999e2ac3"
+				"id" "elementid" "b5c5e4ff-95ec-42cf-a252-fb63782bc937"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -1050,11 +1050,11 @@
 			}
 			
 			"comment: classname" "string" "Engineer"
-			"iNumberOfRounds" "int" "0"
+			"iNumberOfRounds" "int" "2"
 			"iPlayerClass" "int" "9"
 			"max" "RoundStats_t"
 			{
-				"id" "elementid" "6dd4e8e3-53ca-4c7a-b05b-43994a39b731"
+				"id" "elementid" "2ba11bb3-7a15-4592-9bc0-e9c55e7326f8"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -1083,7 +1083,7 @@
 			
 			"maxmvm" "RoundStats_t"
 			{
-				"id" "elementid" "69166b9d-7dfa-4760-8f27-161a0e279737"
+				"id" "elementid" "962703e5-1779-4eb6-88aa-2ce648d8829e"
 				"iBackstabs" "int" "0"
 				"iBlastDamage" "int" "0"
 				"iBonusPoints" "int" "0"
@@ -1116,21 +1116,10 @@
 	[
 		"MapStats_t"
 		{
-			"id" "elementid" "b718be7e-dd9c-4b53-9f80-699c0a0c29dd"
+			"id" "elementid" "ea981a00-17f8-4879-a908-ce94687d1597"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f2d0a39b-7be9-40fb-88d4-cb5812debdfc"
-				"iPlayTime" "int" "2193"
-			}
-			
-			"comment: mapname" "string" "plr_hightower"
-		},
-		"MapStats_t"
-		{
-			"id" "elementid" "f5a930f9-54bf-485b-8e09-a05c3402c67f"
-			"accumulated" "RoundMapStats_t"
-			{
-				"id" "elementid" "d244e0b1-8a29-4e34-9684-bc133ddcacb6"
+				"id" "elementid" "d671ba18-e3cd-4ac6-8c32-aac3b6765fdd"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1138,10 +1127,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "011c7401-833a-429c-b44c-54f90dfb3c39"
+			"id" "elementid" "111b4e01-18d3-4d2a-941f-a705475d997b"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c2b34c1d-e330-47c1-a594-cd940229eacb"
+				"id" "elementid" "74ad5855-2f66-47c7-8c55-a34e2c4ac213"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1149,10 +1138,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "71f295c0-281c-41c7-99bc-c3a3b2792c44"
+			"id" "elementid" "387008ea-dd42-4f82-8fbe-3c96c3f12654"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8580023c-6bdf-4909-8e60-f41c715f0144"
+				"id" "elementid" "e48945a5-5774-4077-b9a2-f2f3446e4e59"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1160,10 +1149,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5939bda7-67f5-4d86-8d4a-42a84d2dfc9f"
+			"id" "elementid" "aada48d3-d129-4f6a-95a1-0582f7a96971"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "18500670-d9cb-4262-9f68-6a3b0ecb72d3"
+				"id" "elementid" "dd73823e-8294-4841-b22e-dd42dd73ea9e"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1171,10 +1160,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "938e78db-6796-40f1-838b-e8f58387318a"
+			"id" "elementid" "bde87bf6-7e4c-4563-bc92-6c1649630cbe"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ef3b9c75-54b9-4a22-8472-161cad40aab1"
+				"id" "elementid" "ecc969a4-1e92-4769-9b0f-a931fa9fd4ef"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1182,10 +1171,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6820a8ae-b42c-4e4f-abf8-669ce148bed3"
+			"id" "elementid" "b3cf51d8-f462-4aaf-ac3a-c49f39d17b46"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "3e25fe5c-3438-4727-aef9-5119fed67fdc"
+				"id" "elementid" "cc55dd6a-fff3-4443-a56d-aa5091055829"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1193,10 +1182,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5da27e2c-b9b5-4742-8483-0b3ebba2ae37"
+			"id" "elementid" "106c943f-ad0f-4beb-985a-275ec92d7cdb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "620a4ad5-4e92-455b-ae8a-55d627a74bd7"
+				"id" "elementid" "d98fa155-c768-4cc7-8b61-86be9a3bcc97"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1204,10 +1193,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ddaac468-b279-4382-b38e-2d5034d49d1f"
+			"id" "elementid" "165d9079-18a6-4bbc-8194-0a542bd2fc99"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c490203b-4a73-473a-a694-01a6c1350fa2"
+				"id" "elementid" "08db8fa6-c97d-438a-bbc1-51e374855e06"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1215,10 +1204,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9d56821c-46bf-4a7d-af8c-e66cb51d4094"
+			"id" "elementid" "a1fa8d5d-ed49-4a31-a4bf-16c848e12246"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "382d7ae4-f989-4d7c-aeff-1c2a35271733"
+				"id" "elementid" "4383ae50-cba0-4c49-ad31-a6647abcff62"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1226,10 +1215,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5170d6c4-814f-43fc-979c-1af83c5c62c0"
+			"id" "elementid" "edb9c416-6b5b-40b9-a15d-725eacea50a8"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e6ff1958-8303-41ba-83a1-be554f65736d"
+				"id" "elementid" "b58a4403-1446-4c22-8cf8-333fbd3675fe"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1237,10 +1226,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "08cd2f70-f70a-42c7-a850-f469a4f1ec69"
+			"id" "elementid" "b4ff18c9-919c-49ce-a848-86a5e891eeae"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a7c0da6e-2cbb-4d59-a324-62ad242c7f9e"
+				"id" "elementid" "0812ca5b-e361-465d-9b02-1fe162e1941f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1248,10 +1237,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a43ce9f6-db90-4312-985f-51a1aa2fd0ee"
+			"id" "elementid" "1dc24392-537b-4c10-a6c2-b3100d1b7f18"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9aa0e83c-bc53-4947-b92f-0fda65a79acc"
+				"id" "elementid" "1c15de0e-b827-48a1-a188-c0b8e8e017c7"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1259,10 +1248,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "0cdd99f9-abb8-473e-83db-1478f1dd9f8c"
+			"id" "elementid" "6e7f83d0-aa52-4aec-bb20-cee5d5f9629b"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c8e20196-e79b-4ca4-9e13-81bc124ca361"
+				"id" "elementid" "a09815d7-0bf4-4805-bfb2-8a867c3a95b7"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1270,10 +1259,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d99e1391-5fd3-4b1c-8872-acf775ae8c5b"
+			"id" "elementid" "98947f50-7a0e-4e8b-901a-87480722c92b"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a16a76b5-2415-4975-ba1a-b062f8cbaf0a"
+				"id" "elementid" "76664868-7e3d-427f-a2e1-35dd098baa3b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1281,10 +1270,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "240a40bc-cfdd-4e6f-a2fe-e2df8f9e3970"
+			"id" "elementid" "687d91f5-04c2-4472-bb7d-e0f03f4d6416"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "570c2d14-9e5a-4f99-9adf-a26f50162239"
+				"id" "elementid" "a512f387-9147-47e4-a6d7-b16c62b52abe"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1292,10 +1281,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8422069d-5106-465b-b91c-a32734932290"
+			"id" "elementid" "a78edda4-21ac-4d14-8f1e-126b4695d636"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "11370cd6-ce19-40b4-bc9e-7ca56b86f90a"
+				"id" "elementid" "da5ed988-ca35-466a-b1c0-c45798dd7d5c"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1303,10 +1292,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "62b18e35-8555-4cb1-ae8a-5b01a6c60f51"
+			"id" "elementid" "d85ca20b-7a6b-43ab-921c-58db1fd9f252"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8022ff3b-3738-4df1-86b1-488af962dd6f"
+				"id" "elementid" "fb39ae44-cbaf-43f4-a87a-372ded4dd701"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1314,10 +1303,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a5b99d6e-ff9b-4d1c-8188-7c737e71b46e"
+			"id" "elementid" "687d2e66-398f-477e-b22c-bf28e23e6e50"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f3d4f770-1c77-44e2-9c5e-671b1deb6867"
+				"id" "elementid" "dbca45ba-d08b-4a4e-89c9-acdd44ebb39e"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1325,10 +1314,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "22aebb97-a497-43a5-8371-613d33f8321e"
+			"id" "elementid" "b3642fc5-3c93-42d8-931b-e085428a96d4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ce553a7d-25af-4721-afbf-5d8974a40aa7"
+				"id" "elementid" "01d5e342-a54f-43b2-a777-9720a7d721d9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1336,10 +1325,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "56209966-1591-43b2-a90f-d7bce9d5c1e8"
+			"id" "elementid" "f4b985ce-a716-4f82-b426-c5d328864b6f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c2396a10-17ee-42e0-b905-7fdcd2db0d0e"
+				"id" "elementid" "f09a4cd8-d6ac-4842-88ee-d8f62a44da6f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1347,10 +1336,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "11624ea8-6f2d-40ea-ab1b-7cd76923b6c8"
+			"id" "elementid" "d75ab07b-1672-47f3-8028-e1c33d6a6906"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6f97b771-dc08-4e7e-973a-4c716f913a73"
+				"id" "elementid" "b921c293-56db-49dd-8122-e1877c879c66"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1358,10 +1347,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "aaac77db-664e-437a-ad5c-97a1965d22ba"
+			"id" "elementid" "e73f1e3b-5931-4597-8dde-11b4b2c5400f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "be3560e6-1407-4fa4-b801-ffbb0b9ef2b8"
+				"id" "elementid" "da3d3e76-c94a-48d9-804c-c3925a904d0a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1369,10 +1358,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "73865b6d-8442-40c4-ae32-f4f99eda689a"
+			"id" "elementid" "11c9b306-10a7-49c4-b1f1-1ffcd414d80e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "780b2f22-64fc-4dff-89af-c5a06748cc33"
+				"id" "elementid" "5410cad5-1ed8-4369-8e46-97a967c00a4b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1380,10 +1369,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "66f017e1-ca80-43ee-9129-54599dd28681"
+			"id" "elementid" "797ba7e3-2ce8-4ab5-b024-4c1037ce5219"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6f803b90-8129-4d27-8eb1-5c54c769f041"
+				"id" "elementid" "225f7be6-55e0-432d-80dd-f362b95345a8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1391,10 +1380,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ddb47088-4c3e-4e2b-8336-829d9da25945"
+			"id" "elementid" "c1009c49-7f05-4024-82c3-1e883469097c"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "981416a5-f0ac-42d6-8f06-5723836ed246"
+				"id" "elementid" "f11a7ad5-97d8-45de-aba7-1e93d18bb4d0"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1402,10 +1391,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "27641559-af83-4873-8626-1d43760b4512"
+			"id" "elementid" "cb53a897-d43e-4d7f-80c8-dc8ddb3fc2dd"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a8747b71-746a-48c1-a9c5-c2c22b712722"
+				"id" "elementid" "ee3d4bdf-3ccd-4980-a698-9bf222fdc378"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1413,10 +1402,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6670316f-e7ce-460f-9f55-22b668744a71"
+			"id" "elementid" "28f674dc-b856-4a2f-a3da-12e79c5ee136"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "3279606e-7c63-4df5-8000-55c4dc8f78d0"
+				"id" "elementid" "c60a0d23-7b4a-4050-944d-2144ae62b157"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1424,10 +1413,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d95cc830-9781-40f9-ab37-7efaa95ce48c"
+			"id" "elementid" "bf77e9c2-b29b-419d-a0be-917a28932a42"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "7c3ebd78-f319-4a7b-a36b-d88d6f18d2e0"
+				"id" "elementid" "ca03f63d-6332-41be-84c4-4be1953ee116"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1435,10 +1424,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "61228ef8-2562-43c4-ad13-10961ab42739"
+			"id" "elementid" "9810e0e4-3c77-4e85-becc-94a3444b9698"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2fefc33c-f401-4de5-9bd3-07d3fa49786e"
+				"id" "elementid" "4a17775f-1530-4200-bef3-f4ed580fcd07"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1446,10 +1435,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "789c94b4-95e1-41f0-8fde-6796bfe374c5"
+			"id" "elementid" "d1905ba8-9a41-4b3a-8a90-2dbb87c80761"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2fa89cdf-27e1-44b2-a2b8-f3618573fce9"
+				"id" "elementid" "1aaac47b-6834-4413-aec1-c6803192cbc8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1457,10 +1446,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "43558084-7470-4d60-97de-268ac4db382d"
+			"id" "elementid" "90583bd5-b197-4726-9c8c-6251b0e19feb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "bc345de9-50e4-437e-a57a-e35f387a49c2"
+				"id" "elementid" "6a3d5c8a-d51b-4340-b98f-1f24eb63b863"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1468,10 +1457,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "576a477f-2cf0-4ed0-bd0a-7b25a5d15ff0"
+			"id" "elementid" "3e315447-e75e-43c8-a627-3704aba1ecc0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "fdde1325-3f97-44bf-a5b3-3652823ae5ca"
+				"id" "elementid" "3bd0654b-77b7-47ae-8417-56a02423b7e8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1479,10 +1468,21 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "746b21b9-7e8f-4d46-b798-8856e23fe9c8"
+			"id" "elementid" "5b0b6e9c-8862-4693-a7bc-9f1f40bb7879"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "76da2f17-0c1d-4b2f-ad7e-9bec427f9f7f"
+				"id" "elementid" "6a220423-c7b4-4371-b53d-7dcb7582db37"
+				"iPlayTime" "int" "0"
+			}
+			
+			"comment: mapname" "string" "plr_hightower"
+		},
+		"MapStats_t"
+		{
+			"id" "elementid" "a8e0cef4-b31d-4241-9e07-5438ffe7a627"
+			"accumulated" "RoundMapStats_t"
+			{
+				"id" "elementid" "954faffd-6468-43f9-98e1-2440566a531d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1490,10 +1490,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7f00e2db-f8a9-4956-83fa-a04321042bf8"
+			"id" "elementid" "e777c31e-0df6-468d-bea5-379c489e4bd3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c971f88c-75d1-4016-91f3-9777331cb48f"
+				"id" "elementid" "48899833-71d0-423e-99dd-ff85d48dd1f0"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1501,10 +1501,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "0b65bda6-cb49-4771-87ea-c5562640f42c"
+			"id" "elementid" "b9edf988-8cc8-4b55-a75e-eac78ba5897a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "785ec823-5784-40a0-8bb1-4cc3daff1571"
+				"id" "elementid" "0611376c-ea7b-4174-bc82-8ac7eaf90bd2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1512,10 +1512,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "45955833-ab2a-442f-940f-47a02359a792"
+			"id" "elementid" "717914f1-4f97-4af5-b37b-c59402a62157"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e952a5e1-6eba-48c1-813e-dbaf9dc22355"
+				"id" "elementid" "f439eca8-34b6-46dd-a57a-90f9196a8c21"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1523,10 +1523,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fc4fd421-d482-48a9-b707-95aeed22df0a"
+			"id" "elementid" "c813d013-8b7c-4947-af28-4adaad9fbe92"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "3410baf4-aa2f-414c-bffb-7dbd038e6e16"
+				"id" "elementid" "15cfb482-78b8-48de-9c7e-db4f9407bdcc"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1534,10 +1534,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f5265e8c-44ef-40c1-aa15-2b2762c304d1"
+			"id" "elementid" "913a1fa4-17ed-49c2-bac7-6e012b5d650e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c10ee07b-c870-4a3e-8919-a12beeb0d743"
+				"id" "elementid" "a253588e-292e-454f-9506-0660f4b58c45"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1545,10 +1545,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "21c09c93-a3b8-4fd4-9ee3-aad753c36ca0"
+			"id" "elementid" "63428e08-24c0-4e1a-a087-95bd1505711a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2d564844-8728-4a69-96d7-6b6d0d76d7ab"
+				"id" "elementid" "bb473664-1321-4b5f-bce7-84cbfb941995"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1556,10 +1556,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c860aa7d-0936-4a0d-bf4b-b5a3cd6639f0"
+			"id" "elementid" "0e0c2dee-4a5f-4671-ba31-6113c920925e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "0eb37c1c-0fc3-46b3-918b-621a66c10fe4"
+				"id" "elementid" "bda376d0-8f67-4faf-81c6-3dcadb416c12"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1567,10 +1567,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "798d1776-db4c-4412-b23e-41a070786060"
+			"id" "elementid" "78219b7b-1b65-475c-adf3-29a801093d19"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "95b4250a-670e-4210-afd6-eaa419027dde"
+				"id" "elementid" "9662ed78-734f-4abd-917a-6800e8c8b06b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1578,10 +1578,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9ddbc5ab-f181-4baa-8d35-efede81289c2"
+			"id" "elementid" "0f772556-e605-4eee-a1f0-ed31e85ff11d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "054819b3-1d6c-48b1-a2b3-e884bbe8a067"
+				"id" "elementid" "206a6b72-8b71-4bd8-aef1-40228fadd525"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1589,10 +1589,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6c54a41f-3485-4316-ad1f-072a5d9bde6f"
+			"id" "elementid" "4ce6c08e-30b9-4434-9d42-f891e8619e11"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a6c5d63e-989d-4df6-94fc-5464258a7b2c"
+				"id" "elementid" "70ccd69c-8363-4b0f-b588-1320518d5ea2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1600,10 +1600,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "43003ad8-14fa-4ced-b78a-0b23976337ba"
+			"id" "elementid" "05669b68-5280-4842-8f15-fcd04fe48b38"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "59b0463d-3bcd-4f9d-82cd-9440998f6ed8"
+				"id" "elementid" "2d274596-6aae-4b38-875e-8d6281dfc4fb"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1611,10 +1611,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ea54bb83-3d44-4203-8ccf-c28530475442"
+			"id" "elementid" "19460b05-e665-4efa-9daa-27b0afba2d32"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "df96065b-8637-4547-a762-304271703541"
+				"id" "elementid" "7d3f6b7d-9b73-4533-9350-4b00db1b3408"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1622,10 +1622,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "490a7af1-97dd-4939-b7a2-163a581e781d"
+			"id" "elementid" "36ad7b59-5a11-4a01-8800-77dbba5ed8a0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e662d55e-e45e-4e59-8de7-0f42cf29606f"
+				"id" "elementid" "d1505d53-115e-4e41-8a29-611813b751f0"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1633,10 +1633,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5abc5ab7-8297-46c0-8f10-05e9a01612f8"
+			"id" "elementid" "9a941994-7f84-46a0-a8b0-755c786eb9c9"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4303d378-6900-4923-bef8-7d8bae55e1a4"
+				"id" "elementid" "8fa39276-1028-4521-84c6-8f38b8c2cb09"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1644,10 +1644,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e0ec8666-c626-4d14-96ee-fea60db9fe14"
+			"id" "elementid" "15d74578-8ab9-4780-b52a-943c5759bc91"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "76358ca2-b8b1-4645-9d9e-d5edf7ac937e"
+				"id" "elementid" "a7280b5c-64a2-43a6-8707-27bc56479802"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1655,10 +1655,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8b71c3ba-1d18-449e-9655-39ef94c44a06"
+			"id" "elementid" "7abb51be-a5e0-45b0-8a12-8de4d5e77902"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9a2121f2-f69d-4ade-a40f-e01eb09553cd"
+				"id" "elementid" "00ebd399-4c59-49aa-b758-7196e49287b8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1666,10 +1666,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "505eb59a-4c2f-4874-9fc4-79a02a1864a6"
+			"id" "elementid" "438f1c4a-ba77-42dd-9086-595c7243c745"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "02da78b9-a5bd-485b-b188-6f440ee9c77d"
+				"id" "elementid" "addd976e-cd18-4fd3-8e27-6837fe037dcb"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1677,10 +1677,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e2e31faf-0f97-40d8-8833-f684691d9fb5"
+			"id" "elementid" "885f0f5b-19fb-4ada-8d4b-da7dfd732ce6"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "bbea4b2d-f9c1-428b-ba5b-fc32d75a645f"
+				"id" "elementid" "69b3736c-0c4d-4d18-b1c2-ecf555fafca3"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1688,10 +1688,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e6790380-4544-4517-ab97-e461ef19802a"
+			"id" "elementid" "ef4670dd-57c8-439a-81e0-5a637220d260"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "680dcfbc-d3be-4fa2-9738-5a189153c707"
+				"id" "elementid" "bcf9445e-a0c7-4195-b255-fe6fe68d32fd"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1699,10 +1699,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a37c285c-7927-4e61-9c7e-d82e1b704857"
+			"id" "elementid" "e553f58f-a507-41a8-98b3-9330589fa901"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "0a3c7a85-949d-49a5-a189-15ed38c483b4"
+				"id" "elementid" "3e047f7f-c001-4ca5-bbbb-06ab518d18ed"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1710,10 +1710,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6ef0aa7c-b480-4467-ab32-0e28ec12c206"
+			"id" "elementid" "e33dbafb-e8c3-4ddf-8d39-76921580514f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b6cc52b3-e71c-42eb-a3ff-9d1c0c8bc5b7"
+				"id" "elementid" "c023749c-6f1f-4bb3-ad12-20af21dcffab"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1721,10 +1721,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bb3c5610-baab-4f73-aa93-84d8ad490599"
+			"id" "elementid" "04223af2-84fd-4e53-9df2-1462bd464444"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d4e4a60c-4e3f-4683-b836-3c57e218315b"
+				"id" "elementid" "014c08fc-2ae1-4c1d-9212-9e7f53ee7711"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1732,10 +1732,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "4f827301-7960-40b9-9ab5-2122d4903b0f"
+			"id" "elementid" "414fb9cf-ac7f-4ef3-9cca-e3abcd9b32b3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "321ead1c-82ad-438e-ae91-cfbaed11c004"
+				"id" "elementid" "4f577190-3a5d-4617-93c6-cc4b4c905bfc"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1743,10 +1743,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8af7b329-807d-4eaf-afb3-28153a5c2955"
+			"id" "elementid" "88af17c5-140a-4f75-bae0-3f574b237fe9"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4b4575a1-3a47-4445-b915-eb77d5268451"
+				"id" "elementid" "bd1701f7-2ed1-43a7-970d-557522de5be8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1754,10 +1754,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c9196b5a-0489-4077-ae69-f43ce7113328"
+			"id" "elementid" "e1939ea8-23f6-4ae5-bc50-e94da612b2cb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b7d790ae-5e42-49bc-9b75-9df59a007b04"
+				"id" "elementid" "01e73a92-664f-477c-ab5e-26b19b1e3bc9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1765,10 +1765,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a8000f3b-77ef-4d5e-90ea-b6a56b0963ce"
+			"id" "elementid" "2898937f-4d09-496c-903f-a4846b7fdb82"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "20c657c7-c236-4057-aa00-5c28023a04b8"
+				"id" "elementid" "98c2349e-51fc-477c-a4fb-fae4afb69214"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1776,10 +1776,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9e497fb0-24e0-4b1b-b63d-84e972a1ce1b"
+			"id" "elementid" "c476c539-acb3-4a0d-93a3-4a5c31b928e0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d0069a17-1b25-4e0c-899d-14c82f4a5af7"
+				"id" "elementid" "2963e796-94b9-48e8-bedd-7421b925a560"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1787,10 +1787,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "507fc3a7-f1d8-4952-b223-4f40a5121747"
+			"id" "elementid" "ef671dec-c667-459e-ac39-426ee5313f06"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "22b5bee7-935a-4f38-a938-924e2f55ed72"
+				"id" "elementid" "81b87ab0-c19b-44db-9666-3c75ede34168"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1798,10 +1798,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3d1f4faa-ed79-4cdd-847c-b2853e645210"
+			"id" "elementid" "41a8facd-c43e-4aa4-84a0-853d9fa67a09"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2823777e-a73d-41ce-b310-9f5eb0a49694"
+				"id" "elementid" "96601c6e-3563-4da3-826d-4062f3c3bfd2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1809,10 +1809,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "17a38c05-4118-42a1-bdaf-9140e1abdd92"
+			"id" "elementid" "8e3b888f-8132-4f5a-8186-defaeece2df3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "5358e90a-62e4-42e0-9624-96162e164968"
+				"id" "elementid" "8ebd5281-ead9-48bd-a007-d09d9af3aebe"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1820,10 +1820,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c6f71238-5610-4396-bf47-5707b6f22743"
+			"id" "elementid" "328a9697-caad-499c-b7a5-707d184f89da"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1b765329-c416-43a3-ade4-516b080fec3c"
+				"id" "elementid" "afc1ad18-c526-49da-9700-ce32e8685162"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1831,10 +1831,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d488c95f-cbdb-4562-b276-5a00ef6e36e0"
+			"id" "elementid" "194c0ae3-84cb-465f-b893-7ba941ce48ac"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "945a0c27-690c-408d-91dc-a091fbc86054"
+				"id" "elementid" "ec22bc9c-4e44-4041-9fc7-f2e23e628e5c"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1842,10 +1842,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d0f03a17-5703-4484-9362-2969fb9e4f4b"
+			"id" "elementid" "a308be0a-e1ae-4cd0-85dc-133b5b5844fb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e4ccc9c5-b405-4f66-a89b-e25667536e6b"
+				"id" "elementid" "5d69db81-e08d-48b5-8241-bf96fa05e3c8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1853,10 +1853,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9479b07b-6fc5-4716-a440-0f32fafef248"
+			"id" "elementid" "8ab0f0dc-1d2f-4116-ba0c-ebdd37e5e5e7"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9a212dd1-dd57-4805-9862-28e4cccc5220"
+				"id" "elementid" "c505a561-cf79-41b9-8384-cb2e7c6de128"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1864,10 +1864,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "eac28f81-300a-44b8-b8a2-1ab79093e079"
+			"id" "elementid" "241ad6f7-079a-4107-a698-26ad92f55fdb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a936d518-1fe2-434a-abec-9bd0935c29f6"
+				"id" "elementid" "7d9f2255-7b7c-4712-a100-35405ca2d644"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1875,10 +1875,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e627aaca-2783-41c0-b005-b0b3f601380f"
+			"id" "elementid" "1e813a4b-11ee-4844-8047-75f98a737ccc"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8942ef6e-3802-4d79-ae1e-99451afec60d"
+				"id" "elementid" "95f9f188-c74c-4820-baef-388e3620aac4"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1886,10 +1886,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e2db30d6-08cc-4bdd-a9bf-2858a3467972"
+			"id" "elementid" "38a486d8-9e72-4f81-af98-a2bba60501a5"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2fee56cd-b49f-4dc6-91d6-ceefc4c35adc"
+				"id" "elementid" "5f2c222b-577c-4bfe-8ad4-69f42b292860"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1897,10 +1897,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "56140ccd-e787-4717-bbd6-3d157a0f0d79"
+			"id" "elementid" "7b6b0437-a4d8-4cdf-bdda-496c2d59bd22"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4a5766ff-530d-4ec4-a7f4-c284b0882eda"
+				"id" "elementid" "039386c6-4015-4718-a770-6f9310f778e2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1908,10 +1908,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d71d5daa-1134-4047-ba69-2e4e6aebee41"
+			"id" "elementid" "00f5c853-439b-4cb3-a320-428c4e3fb35a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "df6ca9bb-82cb-46e3-8558-a8511f289c42"
+				"id" "elementid" "8890e5e5-92e4-4db3-8883-ccf6626106ee"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1919,10 +1919,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "55b8b2de-42a6-4c08-ac24-51dd3c19b8ad"
+			"id" "elementid" "7fd2dfad-a2f4-41cf-9314-f36168634fb0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "37dab8df-5836-42a5-93f3-32a5fd8f4de0"
+				"id" "elementid" "d58fb018-38f9-4a1a-a3db-42278bed949a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1930,10 +1930,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "70067117-af8a-476f-9d9a-fabeb6554352"
+			"id" "elementid" "b0dae587-ae49-4d6b-8ede-50aa7547baa1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9c420c30-d12d-4f7a-af5c-d3f7637dcb47"
+				"id" "elementid" "9bdfc9b5-f658-4e65-9105-637eac53f6b6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1941,10 +1941,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c09ce917-da08-4d5c-97f9-48a0d6a29dad"
+			"id" "elementid" "23f6406e-b35b-4d51-919b-af61a4074c47"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d9ad5f8f-1afd-4788-a7cf-28a20d8d76bd"
+				"id" "elementid" "692a2a8d-1e95-4683-84c2-3e616cd8fa3d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1952,10 +1952,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "73655526-beb2-470b-bb95-e99d42beac2a"
+			"id" "elementid" "357e1508-fadd-4699-b9b3-dbb11453801e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d6243a95-01a6-4a70-9d0e-f8a8cd03a07a"
+				"id" "elementid" "49497b02-5d51-4f47-bc1c-8ee90e0dde77"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1963,10 +1963,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bba5975d-156a-4d65-b8c5-69a29c461ef2"
+			"id" "elementid" "7784eeb5-df6a-42ca-b42f-a3bc3f4a4b88"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "eb181408-4bc0-4734-836f-d16168053fa8"
+				"id" "elementid" "68d04a7e-19fc-4e36-98cf-ebda0f2f5b72"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1974,10 +1974,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "52495a53-455e-4144-843c-40f47ed7db33"
+			"id" "elementid" "4fe6fa0f-9c82-46e1-9ffd-fb4b6720c6b4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a22ed58b-385f-40fe-8cf3-91adfeba815c"
+				"id" "elementid" "5e75d6f2-0af7-4b9d-ba29-1a7a09c41d71"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1985,10 +1985,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "66656560-a218-4f97-8c33-62f5ed8f3e5b"
+			"id" "elementid" "89909653-e7e6-4580-a34e-e6f5d59ae2fe"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6aa0c1b6-5ea2-4c5f-8dde-66f42e98d126"
+				"id" "elementid" "32826508-b0e1-41f7-b0f9-88d81eb2426f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -1996,10 +1996,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7672c55a-3665-4473-b765-b0d3787a9e94"
+			"id" "elementid" "5b898bf9-6b89-494f-b6fe-2490a7a6f4c6"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9ecf94d3-74ca-4fbf-bb33-46294c6ef7f6"
+				"id" "elementid" "81cdd450-8f68-4f96-b802-e31d1cbd53da"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2007,10 +2007,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5858f7db-ef13-4b18-87a1-edeccccb196b"
+			"id" "elementid" "8ccb0e15-a672-4e6a-88b5-05b497281068"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "50cfa798-29a4-426c-98f5-7452dbdb1e12"
+				"id" "elementid" "1191a6e3-5a52-4b9f-ac60-7871c2a6ab65"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2018,10 +2018,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b98e5775-8074-4101-9fb9-1d968cc847a9"
+			"id" "elementid" "e19c508e-9bcf-4dbb-90c8-5b2b6818ab61"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8f2a8531-eeff-4f81-98a3-2c9b6e800902"
+				"id" "elementid" "f13a1a49-db4a-43b0-be0f-04577bd0e976"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2029,10 +2029,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "afcb88a7-0b21-4c8b-98b4-3caac6aaf852"
+			"id" "elementid" "b9c1e893-1e97-4189-a287-98a6d856b2e6"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8aed50c1-d840-4af4-b5c0-203a01534bec"
+				"id" "elementid" "ad68b5b5-8abd-4697-95c5-1100d7669fc1"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2040,10 +2040,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "42b6db42-8946-467d-b95d-953b6e243459"
+			"id" "elementid" "efed2acf-bbb2-428e-a1b5-fe86925335c7"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f9cd57a0-e04b-4d51-9849-b6aadd0c90a4"
+				"id" "elementid" "bae5edc9-5912-4030-bc31-75b056373d14"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2051,10 +2051,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ae536598-b0e5-4c44-8a3d-58d8894b9bd5"
+			"id" "elementid" "25cc41a4-f0cc-4a80-b171-4220e950d4a1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1079f735-ac08-4223-96bc-12ec3243db2a"
+				"id" "elementid" "c1eb5df9-f998-4e00-bb42-342fb416908d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2062,10 +2062,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f7a63453-6630-4e49-9870-5b0d97819b6b"
+			"id" "elementid" "7a73d276-403a-491e-be69-9871dc2bd53f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "79b0a578-e62b-47dd-9863-c8b554febac7"
+				"id" "elementid" "fe9142c1-8baf-4d9a-adc1-faca10cedb1b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2073,10 +2073,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f917fd30-e900-4218-90d9-5172253e0bbd"
+			"id" "elementid" "b71bb9be-83dd-4970-a055-04da795a353a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e6dbdd28-fb45-4198-be6a-0d16b147dd63"
+				"id" "elementid" "9a96fe3c-7e53-4132-baca-cdcbbba64ad2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2084,10 +2084,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3226efad-d0c9-46ce-9e1f-68891ba6980b"
+			"id" "elementid" "333634c2-43c6-497e-b19c-e8e094a93873"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8105c6ff-aa1d-4ded-ad6e-bb56ff0607bf"
+				"id" "elementid" "f7fcd4b2-286b-4857-bcd1-bad0d748e8d7"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2095,10 +2095,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d4f25708-f0b5-4c4a-8ff7-0afd2e3bcb6d"
+			"id" "elementid" "8514c6bf-6ecf-4bf6-9189-93a9b12a053e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4c903347-40d4-404e-af39-5733663b28b0"
+				"id" "elementid" "9ddb05df-82be-4d78-bd8e-192fe9c66c65"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2106,10 +2106,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ef3f6da1-e122-4eda-9b57-c1d444c69fec"
+			"id" "elementid" "eb3c1873-7f7d-4354-bab8-064d14068ed7"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2ee55a46-7cd6-4240-aa71-d461bf02aa05"
+				"id" "elementid" "1471dd87-bda2-4820-81a5-35f301390dd6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2117,10 +2117,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fc060df4-86a8-404a-830b-afb0060e884c"
+			"id" "elementid" "f9951182-f900-4be5-8abc-8d45d4034777"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "aee3766c-9bf7-4819-89b3-299c94295e27"
+				"id" "elementid" "0d04440f-7bc7-4305-b2f8-e4c9c64ea347"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2128,10 +2128,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3eb16663-2757-44d4-a57e-59d32959bdd0"
+			"id" "elementid" "8b193c0f-99d0-4103-a475-be1d8535fc05"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "97723800-314d-44dd-854f-73155329e2e4"
+				"id" "elementid" "96a1fd76-a456-40fa-a1a6-ff12fecea1b5"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2139,10 +2139,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "728b96b9-7212-42f5-bea0-f7f589e576b9"
+			"id" "elementid" "b9d494dc-8373-43f1-a12f-04bfa7476ff4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "bfb10a3a-2869-4464-9a5b-51d2ae6a3816"
+				"id" "elementid" "3342f0e6-e650-4aac-b7b9-cdae8c5728f9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2150,10 +2150,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fd4e2b0b-e2f4-44fe-8807-49e5035ba5d9"
+			"id" "elementid" "2c118776-8b8b-4967-a66d-e151b57cae05"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "5abbbeb6-85f6-42d1-bfdb-7ceab57a3184"
+				"id" "elementid" "9404cff6-9999-4cfe-a151-109114b2bf86"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2161,10 +2161,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3e618814-9040-4d9c-be7a-068166a29d1b"
+			"id" "elementid" "02cd6b9f-f534-4108-a07b-128dd339e0ff"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "5312e077-e414-4e5d-bd14-dc4f9c44a3a6"
+				"id" "elementid" "b4bd4e60-08a1-4fed-9535-206812882aad"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2172,10 +2172,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "84205db2-eb63-4798-8734-0306d189043b"
+			"id" "elementid" "641ca164-f458-4739-83ca-f67ffd201877"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1aa87f38-c923-4552-a192-29e629b968bd"
+				"id" "elementid" "18265069-3a98-4a02-ab37-c2bf00731d64"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2183,10 +2183,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c9d75461-e386-49a2-83cc-5f021d72c14e"
+			"id" "elementid" "f106b55a-15bc-4f54-a69f-102897f04be3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d136cc5a-03a6-492c-8e25-317496259755"
+				"id" "elementid" "1cea5837-85c2-43b6-a4ca-a6f1549a218b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2194,10 +2194,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f5d164c4-d01b-455d-a613-83e1a94e318a"
+			"id" "elementid" "788906c3-effa-4405-beef-613304dcaae8"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "7c612a25-7b7d-42b9-ad91-7c43d017bff4"
+				"id" "elementid" "c57ddc99-93f4-47f6-8d2e-39586b23e49f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2205,10 +2205,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "031c74f0-9ba3-442a-b0c4-69b9620eb795"
+			"id" "elementid" "b3e5d57b-baa3-4d8f-b969-c2d709270b49"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6beb958c-5e99-44d2-9b42-b63614f2c594"
+				"id" "elementid" "24fe7d26-a8cc-4513-8abc-62e3cf0ae7fd"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2216,10 +2216,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8fe7d959-49fb-4fba-ae33-636155ed823f"
+			"id" "elementid" "7865baac-5182-4f30-9faf-c644213ef83f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "fc021312-d0c2-4804-9bb3-71f62b5e9762"
+				"id" "elementid" "74c530cc-6f91-4047-8e6b-4ed9869a064b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2227,10 +2227,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8be7fc12-d193-4b5b-a8f7-f37a773ccb3d"
+			"id" "elementid" "037e8fd7-a2fd-442e-b05a-a332a9df6267"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a4b80524-ca20-46c7-85aa-e83ad5f1f1a2"
+				"id" "elementid" "e938095a-8319-4692-a115-ae4564a3f2e5"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2238,10 +2238,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d399540f-5c89-48d3-ac35-ed21bf596cf0"
+			"id" "elementid" "e290c652-ec2d-462c-a1d0-e5f7560cb9bb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b63b2fa3-e101-4dee-b0c2-6a771abc5126"
+				"id" "elementid" "23040dc4-f3ba-485c-955b-8ae09b1825d0"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2249,10 +2249,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d6229b6d-a740-4335-9cd6-d56aebbbcd66"
+			"id" "elementid" "fd044d3f-ef8a-4d49-aef0-351caa39ac02"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e882ccce-2729-41da-be7a-b71b15909a8a"
+				"id" "elementid" "d82c3e12-8ce4-4910-9576-3b918789bbcf"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2260,10 +2260,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "901f2011-987f-4ad0-a1fe-a980c9d84833"
+			"id" "elementid" "19ea82d3-25c8-46e4-8a72-2ebaf46aec3e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4519bb09-4121-43b5-84ed-628da4a6536b"
+				"id" "elementid" "be335d6c-ccff-4cac-9592-493f12d6db0d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2271,10 +2271,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c8619911-89b5-4ec5-8217-719d837aac31"
+			"id" "elementid" "299458e6-694f-4902-8cdf-ec8535ddd81d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "40dd2a40-c09f-46bd-b50d-845b013c810c"
+				"id" "elementid" "bce3e25a-7e83-4e42-8b6b-45515772d87e"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2282,10 +2282,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fb535ffe-ca9d-49bd-9943-902f0c73e80d"
+			"id" "elementid" "c74ccda8-df91-49dc-8a32-50fe85079714"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2d4d51a3-b63e-4f02-b4bb-a57509500487"
+				"id" "elementid" "40f05bfb-d838-41e8-9fe5-39b615533063"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2293,10 +2293,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6a3cf57a-2fed-4914-a5ab-ea1c0e0e6f41"
+			"id" "elementid" "f249117c-3b30-4e73-86fe-76fff9636564"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ff90357d-bf67-4ade-a5aa-f162a32d652b"
+				"id" "elementid" "c2d21fc2-791c-4a84-ab9e-95736256baf3"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2304,10 +2304,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fa35315a-77c4-4ab7-9b18-b0171cd24c02"
+			"id" "elementid" "cad548f3-f0aa-4836-b00b-66bf54992666"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ea055a95-97c5-4b4c-b954-ec75ddd4f509"
+				"id" "elementid" "9d7f984e-591b-4d8d-89f2-9056f2b3a2cd"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2315,10 +2315,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fc283813-059a-4280-bfab-d2988eb6453a"
+			"id" "elementid" "11c1f8be-ee33-40a4-afd1-ebd2e08d1146"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "42b55729-c486-4f64-a023-b1ed8b903ba3"
+				"id" "elementid" "47b034c3-4c50-4f25-99fc-140899831152"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2326,10 +2326,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ef70c5d6-9017-41c2-9de9-160b9eee1c9b"
+			"id" "elementid" "7b434f42-983e-44ce-a2c1-7318ba55d94d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "053682dc-1712-4e4c-8172-5739e9397896"
+				"id" "elementid" "93930ba8-0906-4091-a495-2d6c01b55d28"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2337,10 +2337,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "426b2fd5-30ab-4733-a71d-a44859ba3e24"
+			"id" "elementid" "0a10bf07-30f8-4b45-b665-f38038869054"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2c5373a8-0687-45c7-82b8-1fd44a4aa126"
+				"id" "elementid" "cb779cde-780d-4101-aa21-4659fdcab34a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2348,10 +2348,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9b33bd32-51bd-433b-b3f3-01184f690cae"
+			"id" "elementid" "1d5e4323-e230-4f7a-8983-59f75520e2f8"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f328b13d-8e2f-4f49-ac98-26cb28f7d3f4"
+				"id" "elementid" "20441f38-6ce1-4ccb-9c70-c4bc51296eef"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2359,10 +2359,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c538e2ef-1dbf-4e17-b52b-071cf634f20b"
+			"id" "elementid" "ecf5d675-30af-481f-85f4-8c763b5bf3de"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a0853871-a8e6-4a4c-ab9f-1cebc1b811be"
+				"id" "elementid" "0a80d8fe-b185-4770-b72e-063e4bdc75be"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2370,10 +2370,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "69fa9eee-97b7-4613-9a22-71ac00958408"
+			"id" "elementid" "0a70fb4d-19d6-4c5e-b379-14ce163f3dc0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "42f602e2-85dd-448a-9d48-2ec4d971a6a1"
+				"id" "elementid" "1394ab22-e2eb-496e-8d0c-9bf03403195c"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2381,10 +2381,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "681f2de3-5426-427c-9f2e-cd1fd61435c2"
+			"id" "elementid" "1bcc7f97-76e8-4d55-b822-acbda229e03b"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f500a184-7c1d-4065-896c-1d133b86ed4c"
+				"id" "elementid" "d7a6eca4-ea07-418d-80f9-0bd72e73f0a1"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2392,10 +2392,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6670994b-5376-4381-a44c-bd2bc0456e71"
+			"id" "elementid" "13cb9c8e-d6be-4dba-8324-cbb14396f845"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "fef6014e-503d-4bbd-a92e-fc77dd15072b"
+				"id" "elementid" "ddf10af4-4773-494f-a350-8df44c0bd84d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2403,10 +2403,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9678c50b-804f-43d3-bada-515966517a89"
+			"id" "elementid" "555173c1-e9ac-49ca-8cd0-5e034de97b14"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "96446f0a-b6d7-40a7-87b3-4b4320a3bef6"
+				"id" "elementid" "214aa76f-4c13-4894-a9e4-03ece9ea4084"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2414,10 +2414,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ec973fee-edf7-49e5-8e5e-05b352f26eab"
+			"id" "elementid" "cc04ee89-fe0a-4903-a788-943d14acd7d9"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ff6efa4a-5323-434f-8f89-98c0b9d96b34"
+				"id" "elementid" "f429b289-c24c-4a31-8e01-8ebeb61fb7b8"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2425,10 +2425,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b7329869-d3ad-448e-96be-ac8949028d1c"
+			"id" "elementid" "cfb5bd3e-d54b-44e4-aba8-0809f93d2ac2"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a2538136-5620-4a04-805b-4561794eabe5"
+				"id" "elementid" "0bd033ce-524a-41cc-b463-94b25471bb47"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2436,10 +2436,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "75e367d1-4fc0-49c7-9986-4c69b5b66833"
+			"id" "elementid" "7a179bbf-a554-4cbd-8707-96c8eca7a6aa"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "5bc576e5-c6f1-4430-841c-4bdfe556ca22"
+				"id" "elementid" "bb6e76f1-1774-4139-940a-a28d61548c9b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2447,10 +2447,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d7a76925-9d3e-43c1-91b5-f6af9089a58d"
+			"id" "elementid" "ea5a1083-e97b-4fea-a8fe-df394dc1cf2f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "24a6dd74-9fd1-4cae-b3d6-cb615f168427"
+				"id" "elementid" "bc930fe4-372c-456e-9cb1-43c6ecf26739"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2458,10 +2458,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "46db6802-3ea3-407a-9b3b-ab447e2137b5"
+			"id" "elementid" "ed5a7781-bfa3-4e70-b533-32a57e817986"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "7d1a5e53-a2dc-4a9b-b6b5-9ba29839d7c0"
+				"id" "elementid" "8a62407f-12e2-4e69-8808-7caeefe6ae62"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2469,10 +2469,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "aa83eac3-b0a1-4cdc-a5b5-53f3b72f669d"
+			"id" "elementid" "f42fb30a-c9e9-4685-895b-088baa382ebe"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a86706d0-57f2-460b-8e35-304293cc7f73"
+				"id" "elementid" "098dc69e-0cb4-4f01-b711-4fbd5f5e3df9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2480,10 +2480,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bfae8597-463a-4e86-b038-dc97a37ce86f"
+			"id" "elementid" "eed48543-4275-4007-aa42-f37686b401c6"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ee03e2fc-a0b3-4225-b4e7-9751e8dc1388"
+				"id" "elementid" "6daabcef-d3f1-4ae0-8fc5-32690a24e62c"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2491,10 +2491,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "0c1cd73f-cc89-43dd-b9d1-8d7467ce09f1"
+			"id" "elementid" "0ca6f65b-d1a6-4928-9877-51b00cfb07b8"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4499b0da-d8d4-477e-b054-c631efc5d355"
+				"id" "elementid" "ebd79b83-1f86-421c-9cc5-d1d370ae8d3f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2502,10 +2502,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9697ce9b-45a8-4c38-b813-8145853c3b32"
+			"id" "elementid" "27f2fc86-c6b6-4390-9fdd-b44947490816"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "811e1d08-8dc2-4333-b99e-40442f5cd570"
+				"id" "elementid" "319099de-48d3-4d57-beef-8eb8369ed683"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2513,10 +2513,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "98949628-e4fb-4445-b15c-336eb240927f"
+			"id" "elementid" "c118b79d-08ea-4a4f-8fde-56103ef5db72"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1b396e3d-6dab-45ee-8c87-f7341295f369"
+				"id" "elementid" "1132c6de-d8f3-4bde-ac28-5be1e143d6be"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2524,10 +2524,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "cd08dbc9-a70b-4395-b7cd-3f4d085e9102"
+			"id" "elementid" "8fb75a16-24fc-43c8-8344-ba3757480625"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1d695c4d-f06a-485f-ade2-a94900b9bc24"
+				"id" "elementid" "8dbe75fa-19b6-43e1-ba2f-3530a96be2d9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2535,10 +2535,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "0d1595da-7ad2-4785-8beb-c17c8a39da67"
+			"id" "elementid" "98c8411e-ec3a-4c50-b290-010ebadefea0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e53dcc4e-e373-47da-ac6b-28e7c470e751"
+				"id" "elementid" "35ef499c-6d9f-4afb-836c-caa34d7f8642"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2546,10 +2546,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "36818dc4-85fb-42a0-89e7-91dc145b2b3a"
+			"id" "elementid" "69ce5896-5cb6-4586-97bc-0df27d94e0d1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "371b1fdf-8dae-4096-86eb-d09cb1272558"
+				"id" "elementid" "8a08d7f5-462c-40e6-8399-7f12c08157ba"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2557,10 +2557,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6b2def00-3ac3-4645-b85c-7e751d8ddfff"
+			"id" "elementid" "5aab57ab-dcc4-4358-8105-b25f20694f2e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4aa77df1-f265-490f-8609-24dcd006f32c"
+				"id" "elementid" "74da21fc-34ef-4363-825a-75a0e845e70f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2568,10 +2568,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "149e5262-db3f-4991-9800-05e2e7d43746"
+			"id" "elementid" "c7765644-6c9d-4133-a895-55923f38ffaf"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9f4eb5c3-e513-4c6f-b3f3-f37dc6c140ff"
+				"id" "elementid" "a2ca220f-370e-4b72-8974-418f3f9565d9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2579,10 +2579,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d7534a4b-24ff-4798-8b62-b05016120198"
+			"id" "elementid" "c9ffff94-6e15-482e-ab0c-16c52a38a910"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "07e3ff0e-a1c9-41c0-a0d1-1def7c171b4d"
+				"id" "elementid" "0dce9813-32b5-453d-a684-6801e4d71c62"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2590,10 +2590,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bc79d9a6-7919-4922-9a43-877c547c0ec2"
+			"id" "elementid" "7a336252-e95f-4536-bea8-ab3074b4f3fa"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "90e481fc-0c21-4e6f-b00f-6b00924e602c"
+				"id" "elementid" "55a90f29-1560-4e70-85ce-2392bb787cda"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2601,10 +2601,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c840df2d-ef33-4df9-989e-dbbe7c066c99"
+			"id" "elementid" "7f12ca13-ef89-4189-aaed-360124fe0ac8"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a2220cf4-f615-4370-9d49-cbd371ccadea"
+				"id" "elementid" "17a10062-88c6-4de7-8d43-52a1d84438cb"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2612,10 +2612,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "5296ec1d-3aca-4139-b905-1df13ad56e3c"
+			"id" "elementid" "a882a7a4-a179-4e24-a3dd-801655b16da3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "30b8ccf3-e665-4cf4-b321-adc1c0734f1e"
+				"id" "elementid" "b49d7494-5bfe-468a-84a2-c3b900c0da43"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2623,10 +2623,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7d206020-0476-40b2-9b37-dd78f9d39345"
+			"id" "elementid" "755e1da8-b10d-4565-9059-bdbc5290ea47"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6a6cc02d-cc2a-408e-a187-f917b7c36499"
+				"id" "elementid" "85151dc1-8d97-430d-8942-3412bc787bc5"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2634,10 +2634,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d64f7a51-3ef6-4d64-b447-9bb11b36e8a8"
+			"id" "elementid" "9da8c908-b284-427d-9bde-16559e61426e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "acb73b5c-5787-4ba9-8f52-a8d8d79535c9"
+				"id" "elementid" "77e09ed2-bd50-41f7-be67-10d65d41c24d"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2645,10 +2645,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bfc333a3-2891-4175-8a3f-bf8c8baae7c3"
+			"id" "elementid" "32c615de-3fea-4415-92e9-49b3ff2a7096"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4e59648f-4fcc-4e06-81e3-f6f945a504d6"
+				"id" "elementid" "7f2bb989-1cf1-482c-9240-0add2544fa83"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2656,10 +2656,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "36b767e4-240e-4208-b8d3-f49bf5c8f918"
+			"id" "elementid" "1586e45a-d8a3-4022-8eca-20750f6ccea5"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ebd637d9-bc9a-46dc-b381-9a03f2d07fe7"
+				"id" "elementid" "40a606ab-f7b3-440e-a671-b9ca70fb2ade"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2667,10 +2667,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fec0f978-ae21-4e7e-b18c-141260960203"
+			"id" "elementid" "5bc9f025-37e9-4685-ae75-a25160aa5907"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9ff380fa-3c70-453c-989b-1c578705f134"
+				"id" "elementid" "3464c1cf-971d-443d-b94e-0d64d5614cef"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2678,10 +2678,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c0133a9f-8918-46f5-93dc-8cfe1edfda6c"
+			"id" "elementid" "2cde049e-a184-4eb4-9eea-02afb2fb6d34"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "898a44be-36f5-4516-bb61-0b1b49dc0b33"
+				"id" "elementid" "986c4e47-3288-4406-8055-97d2093f7a9e"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2689,10 +2689,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "01747f77-e91a-4fbc-9089-4d6ca8e9f6f0"
+			"id" "elementid" "3fb05f90-281c-44fd-9fa1-e9ff2f475472"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "08612178-1532-4127-902f-b40e34027e64"
+				"id" "elementid" "645e42a2-064b-4eed-aacb-682ffb2d625a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2700,10 +2700,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3e0ba110-8521-40fe-8f79-ca8a672096b6"
+			"id" "elementid" "3528a243-5301-420f-941e-7ed99d27b1c4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "1452338d-b93c-493f-a8be-6e77dcc1704c"
+				"id" "elementid" "e8092777-2f95-4c6e-872f-f5b72572f6fa"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2711,10 +2711,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "50c082ca-dbce-4651-9b26-27f0714c4d28"
+			"id" "elementid" "24d7c6eb-67d9-468b-918e-19f2aa9711a4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d1f4331d-9a3b-4dbd-84d3-f7e5d9d69478"
+				"id" "elementid" "57bd1256-09ab-4000-9bec-f6780a9ebe08"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2722,10 +2722,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "bbb3c6e2-5390-43a9-909a-f2e74f939c50"
+			"id" "elementid" "25167124-1e75-4a5e-b18a-615e286c0a22"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "0cb7f0a8-e86e-4631-a48a-b047f3260d4f"
+				"id" "elementid" "a74f9f53-11c9-4392-9b09-43b7a68b06ea"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2733,10 +2733,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b073dc77-818d-49ea-90e4-75d772b05dba"
+			"id" "elementid" "5dbc7114-d624-4955-bcf4-28760e9d8501"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "976fb6c6-b6ad-47e5-8ab3-0156d7481abd"
+				"id" "elementid" "c3c54c32-c1b8-401c-8536-974acfce49f2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2744,10 +2744,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "785148ef-699e-4fa9-93d0-20bad8ac850a"
+			"id" "elementid" "fe24fc0e-6619-4ad0-95eb-63472fef23ba"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "fe97bbd9-6d80-4f84-a080-b3a925028fc6"
+				"id" "elementid" "9bcc470a-d22f-4edb-8b5b-2fc5c657f6ea"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2755,10 +2755,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a7bd9ae5-272c-49cc-bc3a-653d8f254411"
+			"id" "elementid" "6292da32-144a-481a-803e-4ebee87c53fd"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9f9a463b-0749-487e-ad90-085d91384728"
+				"id" "elementid" "974d5584-95d9-48c9-b5a4-2fcaecf07dae"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2766,10 +2766,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9486a789-7a25-46d2-9a5e-606adabade5a"
+			"id" "elementid" "4b57f65c-9cdf-4a36-8daf-28a23dda215c"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b523e127-a5f7-4aaa-b044-c691de3caaf3"
+				"id" "elementid" "a94def2d-43b6-46a9-8f15-ab0b2d30ce9a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2777,10 +2777,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "78de86cb-5a9d-4f8e-a438-c82ccc302db7"
+			"id" "elementid" "12154776-3d46-4a7c-8dae-979ab0900e33"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "884fe491-45fa-4083-af34-9f483690feba"
+				"id" "elementid" "ec20fbe2-c319-47a7-b15d-5629ef64ff21"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2788,10 +2788,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "62e4a008-5660-419a-b8af-e6e181a67f22"
+			"id" "elementid" "f6694c79-24dc-4d14-9735-5378a00e04de"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "3cfd2faf-aa9c-4c0e-94df-8b5db59a4041"
+				"id" "elementid" "9826f14d-dc69-45c2-ba16-760c48b749e6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2799,10 +2799,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "9e9d9236-5c91-4e94-8f1f-506bcd327d0d"
+			"id" "elementid" "ec85048f-4eaf-4297-b09f-89711c6440d2"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "af0fb968-0fd2-4698-8198-c7e8c2da1b0d"
+				"id" "elementid" "4e58ec61-8ab7-4e37-b492-87edc6bc9810"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2810,10 +2810,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "477e4fb7-fef5-4472-8ea2-4f24653c16e3"
+			"id" "elementid" "dabb4782-e7b3-49ab-9d53-c45ca9cf8c0f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "cc584038-8b6e-4a63-adfb-c00d9655e375"
+				"id" "elementid" "205c771e-938d-43e1-8272-bd579f2a1fe4"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2821,10 +2821,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "6fa8f400-f8e9-410a-9260-0f1cb80a81c7"
+			"id" "elementid" "e3c85125-6294-4488-bee2-fad23d8d85e4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c90ebd50-f0f3-467e-b6b7-40cc8e462030"
+				"id" "elementid" "f1cea878-4ae5-4b2d-a774-ca1c2daa64aa"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2832,10 +2832,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c4c857c7-62c6-4711-be05-9113176f4fe0"
+			"id" "elementid" "b28ae859-ac9e-40ef-b3a2-9b365731dba0"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6e6bdd61-942d-41da-b084-3646a3b82dfe"
+				"id" "elementid" "9959df7a-3bb6-4249-99e7-db978d4fb6d6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2843,10 +2843,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7deb1440-ea29-4d58-8162-cdaf9daac55a"
+			"id" "elementid" "fb0bc7ac-f403-4a89-a34d-36daa989c139"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2f0a5036-96b6-48e1-a512-2f9051b482ba"
+				"id" "elementid" "89845964-f5f2-4160-8ac6-4d208539b691"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2854,10 +2854,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "288205df-ddbd-439a-b82d-fa2fa6bea8a3"
+			"id" "elementid" "56225e76-0435-4133-853e-031a233c128a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2600b634-e187-445c-85d2-0610418ac6f8"
+				"id" "elementid" "3e215474-608f-47bc-9a47-3a3dd7ee4401"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2865,10 +2865,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "97142672-c83e-48d0-bcea-fc9394b10ae2"
+			"id" "elementid" "c8e3c4c0-db8c-4527-a971-43113c51fb2d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "ac1cf761-ee50-40a5-8920-624029a3a390"
+				"id" "elementid" "444d3892-b43c-4167-b7a8-240e2a71c9e5"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2876,10 +2876,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7755fd53-3ce6-43d4-ac3e-83c6dfbb8026"
+			"id" "elementid" "11195db0-2966-48dc-aeab-9a6d631e6f96"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e6323b0d-cf28-4f81-a49b-0c0e10cc5ae2"
+				"id" "elementid" "e24586bb-89c4-4b46-b258-d9157e291243"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2887,10 +2887,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b3e3c211-45b8-4f2d-b99f-8fd4b790bf24"
+			"id" "elementid" "849c0bc7-63e6-4c39-b0ff-ef8effff9bb3"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "09823c4f-d042-46a5-ab78-9521f0bd5d66"
+				"id" "elementid" "a477e9e7-fedc-4629-9dbf-7d7a62e5a5db"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2898,10 +2898,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3ea58560-e9ec-48d3-ac56-6f34bcbae2a4"
+			"id" "elementid" "e87b8adb-1a5d-48ea-9102-f9389f722a5f"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "df3d5375-edd0-41b2-9c70-275cdac60615"
+				"id" "elementid" "77fb1721-2580-4d5c-96c5-090e65368722"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2909,10 +2909,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "2680a32e-b44b-48ae-96f5-1d4106414194"
+			"id" "elementid" "4447ede1-1dec-4acb-ab5d-3e179e3df5c4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9e180324-36e8-44e9-ba8b-71bb255ab62c"
+				"id" "elementid" "8e9dea61-58c5-4dd8-92d0-6322ec54afee"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2920,10 +2920,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "24cc5c7d-449f-4cb7-9d43-23d29eaf0c9e"
+			"id" "elementid" "dc5d667e-d204-46b3-b685-7f9db1d0e55d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "269038ca-d0fd-4f3b-9328-39cf568d9d4a"
+				"id" "elementid" "0d46a304-e2ce-4797-90a5-66a931aa0761"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2931,10 +2931,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "985f09c5-5dfa-48d8-8677-8fed2d51b370"
+			"id" "elementid" "c65c0436-82c7-4c78-aef2-7eb33898409c"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "2ee23909-8d4c-4ead-b017-c99735e66125"
+				"id" "elementid" "c31348bb-a7be-4a36-ad5d-1d55d9f630ab"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2942,10 +2942,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "7286f35e-a1d2-4dcd-aa2a-7a1a395c76c3"
+			"id" "elementid" "703d89cc-3e9c-4821-b9d6-df2a877435a5"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d0a7303c-684f-4217-a6ea-c9659db04069"
+				"id" "elementid" "5cdb5065-6628-4c47-a1c5-ef6a82fc5858"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2953,10 +2953,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f127876b-0724-467f-90f2-b1ee388f83d1"
+			"id" "elementid" "055f8f42-b2fb-4572-b9be-b26231925537"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "aed32ac1-9a47-489c-82f3-b45015cc240f"
+				"id" "elementid" "a77a8032-0a68-42a0-99c6-7a9c8cb2fb05"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2964,10 +2964,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ba1fb316-2e70-4455-9530-a675e20b175b"
+			"id" "elementid" "dc458290-5498-4640-80c1-8ad2762d0b54"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6d9c4e14-178f-4f70-86f6-535491bfd678"
+				"id" "elementid" "452478aa-1dcb-443c-93fc-bb279a695907"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2975,10 +2975,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e79fc623-1755-443c-a050-54ff7252c478"
+			"id" "elementid" "11730e0b-1f38-4607-aee2-145e96e71a7e"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "e9effd4a-f1e9-4485-b647-09d0f76c93ef"
+				"id" "elementid" "0831b3de-6566-4f99-a129-a70d868f3739"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2986,10 +2986,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f320d3a5-86c5-4a09-9cce-705bda614ca3"
+			"id" "elementid" "260f2d0d-2628-4994-b9c2-5e7e540b3f49"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "89a02af4-0d8e-4f3b-ab32-80cef0d77205"
+				"id" "elementid" "5e0d6d95-cd5b-43df-adb6-5410a304a719"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -2997,10 +2997,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a9417995-9fb5-4425-921e-77fff8671881"
+			"id" "elementid" "54636fa7-f74b-44b0-a294-baff127ae2da"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a9361c8b-b783-44b9-82f3-a411a41d6349"
+				"id" "elementid" "6329d66a-d001-4324-8bf2-4b9ee95d1de6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3008,10 +3008,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "83fd6e33-a122-49e3-96ce-f32c37cfb52a"
+			"id" "elementid" "976d8981-e7ac-4301-92b1-1ba05c88b166"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "29ae58d4-d8c5-4b6f-879d-081a174d273e"
+				"id" "elementid" "826afc71-9d90-4e99-80ed-e9351744171f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3019,10 +3019,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "f7ebc183-13f6-42c8-82f9-3958b2e07881"
+			"id" "elementid" "d1b40e79-414a-4500-a98b-13c783a127fd"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "facea49f-53ba-4695-99a7-37c6ed15ebdb"
+				"id" "elementid" "4173da9d-9be4-4ced-ba76-31eccfde55b2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3030,10 +3030,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "211713a3-e77c-4d6d-a20c-719947362153"
+			"id" "elementid" "b6c142f0-fb9e-44ad-893a-100b7befdb25"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d200950c-4b1b-487a-b499-6ffae37e0631"
+				"id" "elementid" "b82a55ea-03bb-45df-88bb-9e9b57a66a31"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3041,10 +3041,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "08f52561-27d5-4215-91db-cff6fba3f469"
+			"id" "elementid" "25596938-3adb-4e4f-bfda-05b35bfc586c"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b51792f0-ee6f-4bba-854c-2462d390d568"
+				"id" "elementid" "3c4527fc-6531-4238-9080-9882d2c9dc93"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3052,10 +3052,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "1d9f80b9-7854-4ba2-9f11-308a1561c773"
+			"id" "elementid" "f77802f0-d050-4e8a-9e26-9756247563bf"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "92293081-dd42-4c0f-8efe-41b2497a47da"
+				"id" "elementid" "d33156db-4013-4ab7-9ed3-30fd242b93c6"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3063,10 +3063,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "1758fa96-76a5-4884-a7db-7a5b57db46be"
+			"id" "elementid" "c7c15946-503e-4fd9-8c39-d9c59ced049b"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "035e600b-4412-4328-b49d-1dda092d463f"
+				"id" "elementid" "ed95e5dd-5f70-454b-bb21-700de7dbbd71"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3074,10 +3074,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e7b8c206-2442-47c2-b844-98a4c0175c3b"
+			"id" "elementid" "946007fd-efa4-4fc4-8361-2f386a5d78a1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9c5a639f-af38-40a2-8c93-1fce6746165c"
+				"id" "elementid" "39edceec-043c-4d68-8ae1-6a1b2b900c2b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3085,10 +3085,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "400d745d-48be-4b1c-ac75-9f2e61695bce"
+			"id" "elementid" "7ae6987c-5397-43ff-afbd-e9858e5b6325"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d07f42af-ce1a-462f-ac1b-2147458eb15c"
+				"id" "elementid" "c8577723-e650-4e26-8907-78b8b9aa378b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3096,10 +3096,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "48e723dc-a8d4-4d11-bef6-362fdaf72fcb"
+			"id" "elementid" "5638c3a0-b245-4f68-aa75-710195013f18"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c745e4e7-4431-48b7-a65a-d4ee8f54da3b"
+				"id" "elementid" "858be1b0-3f54-4b43-91bf-3a2b11f61e98"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3107,10 +3107,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "2e6949e6-686f-49f2-8109-431c6b068af6"
+			"id" "elementid" "0093ba34-aebd-4374-8f2d-ea4b0c8c6794"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "13f8727b-82f2-409c-8112-e7b52740697b"
+				"id" "elementid" "9988815c-03f3-4b2c-a766-db795e19c0ee"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3118,10 +3118,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a80b1ed9-7075-4df7-b50d-4135b38c9a00"
+			"id" "elementid" "d9f75416-f5b0-410f-840d-2b68b30fc690"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "68652ebf-ad7e-433f-8625-05dbb97c1976"
+				"id" "elementid" "25634c80-3397-4b26-9632-f961167274b9"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3129,10 +3129,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "4a66ef23-c254-4a19-a739-cf98c5b49c44"
+			"id" "elementid" "e474f74b-f5f0-4c52-93a3-2072526bc7f6"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "9469c489-fa61-4efb-b782-1d5151390180"
+				"id" "elementid" "6ca29c37-213a-4cd2-88b7-efd21bc1d351"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3140,10 +3140,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "fc51ef83-bd48-4943-8d1b-81e87994ea7e"
+			"id" "elementid" "32086e12-8677-4578-93bb-4f60e4b37fa1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "346894e8-1567-41ad-b214-e288a5c74365"
+				"id" "elementid" "44dd4fee-beb8-4951-8638-71694d745b54"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3151,10 +3151,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b6d9c20c-9114-40fc-9f32-b8e3bfbd570b"
+			"id" "elementid" "abd0797e-57f7-4086-acd9-387e1b245585"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "dad0c77b-f2db-434a-b258-76144dfa5282"
+				"id" "elementid" "2794ca0b-d6fd-4e4c-b84c-90950188e4ea"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3162,10 +3162,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "e4bf7150-b4e7-43ba-8308-aac3aea7d100"
+			"id" "elementid" "bb024e6b-3816-43d4-b0d2-9d50f0da9e8a"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "3030c38e-0887-4fc2-ba4d-51fc5707e678"
+				"id" "elementid" "23ccea95-cf33-4b93-998d-773dc245aabd"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3173,10 +3173,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ff1142f4-7107-4f84-b815-c78a96265a95"
+			"id" "elementid" "1fd88097-04ed-47f3-aae0-c6370b51a8ca"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b938aa96-38e3-4932-aefa-cce71cfd3ea2"
+				"id" "elementid" "6bd578a6-4ce4-4d5e-8b4c-20c9699bdf8f"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3184,10 +3184,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "cdbcaabe-2baf-4db5-a112-9daa5a6faf03"
+			"id" "elementid" "f2b9701a-3f00-46a9-be1e-43c41d93fbed"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8d72af7f-09e0-4e39-8be6-6842276106f2"
+				"id" "elementid" "e44cbe01-b9f4-456c-ae72-56f2fc4d31ee"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3195,10 +3195,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d34acdc0-374e-4d88-b3b6-7de62afafca0"
+			"id" "elementid" "72c99809-9ed0-46e6-8bef-b8613afb6ed9"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6fa9a763-f535-4f57-83df-b2f0255f9927"
+				"id" "elementid" "2e5de488-668f-401a-b319-9703639ca09b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3206,10 +3206,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "ecb2f0ae-75ae-4b9e-ac8e-addcf1ab17cb"
+			"id" "elementid" "261161e9-dba6-4d1c-9b4f-2eab4f63aa52"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "5045ae1f-92b3-420e-82ea-f38274382331"
+				"id" "elementid" "c6254f0f-8b0e-4c19-9de8-51bc6ee20ad0"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3217,10 +3217,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3b07bb58-716f-4f4b-bc11-21a9be6e810b"
+			"id" "elementid" "decfe984-0437-4e24-ab6f-5deef4423d54"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "b0775a65-1e46-4eb0-8464-ac683b45c8b7"
+				"id" "elementid" "5840ee87-b396-4ce6-8a12-d5d3f0b84115"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3228,10 +3228,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "d9ec2da5-cc3b-4774-9fda-b3064f8204b7"
+			"id" "elementid" "4e0aaec8-68bd-4879-a44c-6de1265705eb"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "c7ad5cc7-6816-44b8-a5a8-0b0bd43dc701"
+				"id" "elementid" "6356b8aa-3378-4058-b936-93e3ffef2307"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3239,10 +3239,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8b616043-0cd4-4670-80a3-a9d67b2510d6"
+			"id" "elementid" "7be70708-cb68-4016-ae7c-ea0eb68696f1"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "7c8dc2dd-9bb6-4b2f-a3cf-8c392e72133e"
+				"id" "elementid" "54e9bd90-cbbc-4e89-9b08-420e9df39c31"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3250,10 +3250,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "80e8bfca-79e2-45de-b7f0-2317c33f8f18"
+			"id" "elementid" "36f7d06a-98e9-4cb5-a778-93610a453ad2"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "f25fec61-05f6-4bab-9b39-7648f9372e58"
+				"id" "elementid" "7ef61995-3e15-4903-8d93-0bd5672a5755"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3261,10 +3261,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "c2e94169-fbfb-46a7-922f-558c3a254bc3"
+			"id" "elementid" "e7ba0523-9e50-4c26-a790-7ef147c0d022"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "77267ad4-9e4b-4814-bf8b-db073b693320"
+				"id" "elementid" "c4d191a8-9904-458f-aadb-ea0dfdd15d48"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3272,10 +3272,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "509c4a9d-9883-4624-8433-93f7433b9a71"
+			"id" "elementid" "11058298-a7b4-4e34-912c-dada1d43af71"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a10c347a-334d-4a9d-9823-07ca154f5a52"
+				"id" "elementid" "b25073d3-e34b-4b35-ab75-e8d35ecf7735"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3283,10 +3283,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "920d2a77-57fb-4859-995e-5bb27ed4da28"
+			"id" "elementid" "b10829af-21a6-4c95-8f79-022980240ed4"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "a92d337e-76ad-459e-97ca-7904c59710de"
+				"id" "elementid" "7b0ad7cd-f065-4a01-8ecb-45b747b3f177"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3294,10 +3294,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "4c0a9147-9d58-404d-9a24-f333cce0cbd3"
+			"id" "elementid" "8c687f54-7ae1-4b1b-906e-f6d3dcf9dd41"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "592863de-a379-4765-9a98-4419e041b2c1"
+				"id" "elementid" "ea09f2e1-be8e-44aa-b435-012898334c69"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3305,10 +3305,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "a98f568d-18de-4ba3-bea2-742d4ce2fb21"
+			"id" "elementid" "5b42f312-8d9f-4a56-8afc-a63fe8ce7629"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "8797750e-82a1-4e58-abe7-e1c4e6a6abbb"
+				"id" "elementid" "2c8c0853-86af-415b-9252-d54c3d67d341"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3316,10 +3316,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "8cde9cee-9706-467f-a849-a5a048f9debb"
+			"id" "elementid" "62f9556f-2602-44c3-aa1f-1e178c31448d"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "6e594957-e556-48c4-a691-cb391e43f350"
+				"id" "elementid" "193c55a7-35cd-4ca3-8ae3-341ec978f11a"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3327,10 +3327,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "032af17e-b78e-4669-a567-06641bf95a6f"
+			"id" "elementid" "9d370315-c6c6-424a-9e6f-b666dbd031e9"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "805c9297-57f8-4c8c-aac8-cd19024d1f79"
+				"id" "elementid" "467f0ab3-9bd0-4e2d-945e-922a25470c5b"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3338,10 +3338,10 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "3dde5217-7d44-4684-a741-b3a425672eb6"
+			"id" "elementid" "1d332c90-6d9f-4a2a-8302-bda7403cb529"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "d89868d7-9028-400e-922d-ad0c6533a6b8"
+				"id" "elementid" "b7da02d8-4361-4284-9f82-cd6060447fa2"
 				"iPlayTime" "int" "0"
 			}
 			
@@ -3349,17 +3349,17 @@
 		},
 		"MapStats_t"
 		{
-			"id" "elementid" "b5fd1d5e-5fea-40e2-826a-5ae15399acd4"
+			"id" "elementid" "ed34579b-24df-4aae-be4c-695f25656a65"
 			"accumulated" "RoundMapStats_t"
 			{
-				"id" "elementid" "4de8ee56-40e8-4bc7-a594-a5567191118f"
+				"id" "elementid" "47814761-9c9b-46ce-8cc1-8be3e114c61a"
 				"iPlayTime" "int" "0"
 			}
 			
 			"comment: mapname" "string" "vsh_maul"
 		}
 	]
-	"iTimestamp" "int" "996806953"
+	"iTimestamp" "int" "1094267704"
 	"iVersion" "int" "0"
 	"SteamID" "int" "205002970"
 }

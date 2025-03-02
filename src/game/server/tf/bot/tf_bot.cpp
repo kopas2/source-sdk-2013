@@ -144,7 +144,7 @@ const char *GetRandomBotName( void )
 {
 	static const char *nameList[] =
 	{
-		"Chucklenuts",
+	/* "Chucklenuts",
 		"CryBaby",
 		"WITCH",
 		"ThatGuy",
@@ -194,9 +194,29 @@ const char *GetRandomBotName( void )
 		"Nobody",
 		"Saxton Hale",
 		"RageQuit",
-		"Screamin' Eagles",
+  	    "Screamin' Eagles",
+*/		"RED VELVET CAKE TASTES AWFUL",
+		"Pyro is overpowered! -Cosmic",
+		"Skibidi",
+		"Brooklyn T Guy",
+		"Junior",
+		"Cody",
+		"Joseph",
+		"Chief Pee Pee",
+		"WHAT IS THE JIGGLE JIGGLE SKIN?!",
+		"Glizzyyyyy!",
+		"MerelyA Valve Employee",
+		"Hack3900",
+		"moga sucks ass at tf2",
+		"Sans the Skeleton",
+		"Ahhhhhhhhhhhhhhh.....Story of Undertale.....",
+		"OMEGATRON RULE34",
+		"i want toy chica to bounce on it",
+		"crisis_bringer",
+		"mako",
 
-		"Ze Ubermensch",
+
+	/*	"Ze Ubermensch",
 		"Maggot",
 		"CRITRAWKETS",
 		"Herr Doktor",
@@ -234,7 +254,7 @@ const char *GetRandomBotName( void )
 		"Mega Baboon",
 		"Kill Me",
 		"Glorified Toaster with Legs",
-
+*/
 		NULL
 	};
 	static int nameCount = 0;

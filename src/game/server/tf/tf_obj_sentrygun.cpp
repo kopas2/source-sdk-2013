@@ -35,13 +35,20 @@ extern bool IsInCommentaryMode();
 extern ConVar tf_nav_in_combat_range;
 
 // Ground placed version
-#define SENTRY_MODEL_PLACEMENT			"models/buildables/sentry1_blueprint.mdl"
-#define SENTRY_MODEL_LEVEL_1			"models/buildables/sentry1.mdl"
-#define SENTRY_MODEL_LEVEL_1_UPGRADE	"models/buildables/sentry1_heavy.mdl"
-#define SENTRY_MODEL_LEVEL_2			"models/buildables/sentry2.mdl"
-#define SENTRY_MODEL_LEVEL_2_UPGRADE	"models/buildables/sentry2_heavy.mdl"
-#define SENTRY_MODEL_LEVEL_3			"models/buildables/sentry3.mdl"
-#define SENTRY_MODEL_LEVEL_3_UPGRADE	"models/buildables/sentry3_heavy.mdl"
+//#define SENTRY_MODEL_PLACEMENT			"models/buildables/sentry1_blueprint.mdl" OG
+#define SENTRY_MODEL_PLACEMENT			"models/props_2fort/cow001_reference.mdl"
+//#define SENTRY_MODEL_LEVEL_1			"models/buildables/sentry1.mdl" OG
+#define SENTRY_MODEL_LEVEL_1			"models/props_2fort/cow001_reference.mdl"
+//#define SENTRY_MODEL_LEVEL_1_UPGRADE	"models/buildables/sentry1_heavy.mdl" OG
+#define SENTRY_MODEL_LEVEL_1_UPGRADE	"models/props_2fort/cow001_reference.mdl"
+//#define SENTRY_MODEL_LEVEL_2			"models/buildables/sentry2.mdl" OG
+#define SENTRY_MODEL_LEVEL_2			"models/props_2fort/cow001_reference.mdl"
+#define SENTRY_MODEL_LEVEL_2_UPGRADE	"models/props_2fort/cow001_reference.mdl"
+//#define SENTRY_MODEL_LEVEL_2_UPGRADE	"models/buildables/sentry2_heavy.mdl" OG
+//#define SENTRY_MODEL_LEVEL_3			"models/buildables/sentry3.mdl"
+#define SENTRY_MODEL_LEVEL_3			"models/props_2fort/cow001_reference.mdl"
+//#define SENTRY_MODEL_LEVEL_3_UPGRADE	"models/buildables/sentry3_heavy.mdl"
+#define SENTRY_MODEL_LEVEL_3_UPGRADE	"models/props_2fort/cow001_reference.mdl"
 
 #define SENTRY_ROCKET_MODEL "models/buildables/sentry3_rockets.mdl"
 
@@ -1272,27 +1279,27 @@ void CObjectSentrygun::Attack()
 
 		if ( m_bPlayerControlled )
 		{
-			m_flFireRate *= 0.5f;
+			m_flFireRate *= 1.0f;
 		}
 			
 		if ( IsMiniBuilding() && !IsDisposableBuilding() )
 		{
-			m_flFireRate *= 0.75f;
+			m_flFireRate *= 0.0001f;
 		}
 
 		if ( GetBuilder() && GetBuilder()->m_Shared.InCond( TF_COND_CRITBOOSTED_USER_BUFF ) )
 		{
-			m_flFireRate *= 0.4f;
+			m_flFireRate *= 1.0f;
 		}
 
 		if ( m_iUpgradeLevel == 1 )
 		{
 			// Level 1 sentries fire slower
-			m_flNextAttack = gpGlobals->curtime + (0.2*m_flFireRate);
+			m_flNextAttack = gpGlobals->curtime + (0.01*m_flFireRate);
 		}
 		else
 		{
-			m_flNextAttack = gpGlobals->curtime + (0.1*m_flFireRate);
+			m_flNextAttack = gpGlobals->curtime + (0.45*m_flFireRate);
 		}
 	}
 	else

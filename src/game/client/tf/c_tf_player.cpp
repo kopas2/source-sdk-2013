@@ -1402,9 +1402,10 @@ void C_TFRagdoll::ClientThink( void )
 	{
 		if ( m_bDissolving )
 		{
+			// PLEASE JUTS COMPIEL GGODDAMN IT
 			m_bDissolving = false;
 			m_flTimeToDissolve = 1.2f;
-
+			DevMsg("AHHH IM DYING");
 			DissolveEntity( this );
 			EmitSound( "TFPlayer.Dissolve" );
 

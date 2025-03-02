@@ -781,6 +781,52 @@ float CTFSniperRifle::GetRezoomTime() const
 //-----------------------------------------------------------------------------
 // Purpose:
 //-----------------------------------------------------------------------------
+void CTFSniperRifle::Fire(CTFPlayer* pPlayer)
+{
+	// Check ammo
+	if (pPlayer->GetAmmoCount(m_iPrimaryAmmoType) <= 0)
+	{
+		HandleFireOnEmpty();
+		return;
+	}
+
+	// Some weapons can only fire while zoomed
+	if (MustBeZoomedToFire())
+	{
+		if (!IsZoomed())
+		{
+			HandleNoScopeFireDeny();
+			return;
+		}
+	}
+
+	if (m_flNextPrimaryAttack > gpGlobals->curtime)
+		return;
+
+	// Fire the sniper shot
+	BaseClass::PrimaryAttack();
+
+#ifdef GAME_DLL
+	// Apply Knockback
+	Vector vecKnockback;
+	AngleVectors(pPlayer->EyeAngles(), &vecKnockback);
+
+	float flKnockbackStrength = 900.0f; // Adjust as needed
+	vecKnockback *= -flKnockbackStrength; // Push backward
+	vecKnockback.z = 370.0f; // Small upward lift
+
+	pPlayer->ApplyAbsVelocityImpulse(vecKnockback);
+#endif
+
+	// Apply Viewpunch (Recoil)
+	QAngle viewPunch(-5, random->RandomFloat(-5, 6), 0); // Camera shake
+	pPlayer->ViewPunch(viewPunch);
+}
+
+
+
+
+/*
 void CTFSniperRifle::Fire( CTFPlayer *pPlayer )
 {
 	// Check the ammo.  We don't use clip ammo, check the primary ammo type.
@@ -852,7 +898,7 @@ void CTFSniperRifle::Fire( CTFPlayer *pPlayer )
 	}
 #endif
 }
-
+*/
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------

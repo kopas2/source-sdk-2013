@@ -3329,10 +3329,9 @@ void CTFPlayerShared::OnAddDisguised(void)
 void CTFPlayerShared::OnAddDemoCharge(void)
 {
 #ifdef CLIENT_DLL
-	m_pOuter->StopSound("DemoCharge.ChargeCritOn");
-	m_pOuter->EmitSound("DemoCharge.ChargeCritOn");
+	m_pOuter->EmitSound("DemoCharge.David");
 	UpdateCritBoostEffect();
-#endif // CLIENT_DLL
+#endif  CLIENT_DLL
 }
 
 #ifdef CLIENT_DLL
@@ -5962,7 +5961,7 @@ void CTFPlayerShared::UpdateChargeMeter(void)
 		// Drain the meter while we are charging.
 		float flChargeDrainTime = tf_demoman_charge_drain_time.GetFloat();
 		CALL_ATTRIB_HOOK_FLOAT_ON_OTHER(m_pOuter, flChargeDrainTime, mod_charge_time);
-		float flChargeDrainMod = 10.0f / flChargeDrainTime;
+		float flChargeDrainMod = 10.30f / flChargeDrainTime;
 		m_flChargeMeter -= gpGlobals->frametime * flChargeDrainMod;
 		if (m_flChargeMeter <= 0)
 		{
@@ -6093,7 +6092,8 @@ void CTFPlayerShared::OnAddShieldCharge(void)
 	m_pOuter->TeamFortress_SetSpeed();
 
 #ifdef CLIENT_DLL
-	m_pOuter->EmitSound("DemoCharge.Charging");
+	//m_pOuter->EmitSound("DemoCharge.Charging");
+	DevMsg("AHHHHHHHHHHHHHHHHHHHHHH!");
 #else
 	m_hPlayersVisibleAtChargeStart.Purge();
 
@@ -6184,7 +6184,7 @@ void CTFPlayerShared::DemoShieldChargeThink(void)
 			}
 			m_bPostShieldCharge = false;
 		}
-		else if (InCond(TF_COND_SHIELD_CHARGE) && GetDemomanChargeMeter() < 75)
+		else if (InCond(TF_COND_SHIELD_CHARGE) && GetDemomanChargeMeter() < 100)
 		{
 			if (!InCond(TF_COND_CRITBOOSTED_DEMO_CHARGE))
 			{
@@ -6860,8 +6860,8 @@ void CTFPlayerShared::OnRemoveOverhealed(void)
 void CTFPlayerShared::OnRemoveDemoCharge(void)
 {
 #ifdef CLIENT_DLL
-	m_pOuter->StopSound("DemoCharge.ChargeCritOn");
-	m_pOuter->EmitSound("DemoCharge.ChargeCritOff");
+	m_pOuter->StopSound("DemoCharge.David");
+	m_pOuter->EmitSound("DemoCharge.DavidScream");
 	UpdateCritBoostEffect();
 #endif // CLIENT_DLL
 }

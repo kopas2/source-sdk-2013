@@ -2,7 +2,7 @@
 {
 	"itemtest"
 	{
-		"viewed"		"120"
+		"viewed"		"160"
 	}
 	"ctf_doublecross"
 	{
@@ -14,7 +14,7 @@
 	}
 	"ctf_2fort"
 	{
-		"viewed"		"7"
+		"viewed"		"8"
 	}
 	"cp_dustbowl"
 	{
