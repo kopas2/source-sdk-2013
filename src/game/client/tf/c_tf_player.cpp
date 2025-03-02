@@ -1365,9 +1365,9 @@ bool C_TFRagdoll::IsRagdollVisible()
 #define DISSOLVE_FADE_IN_START_TIME			0.0f
 #define DISSOLVE_FADE_IN_END_TIME			1.0f
 #define DISSOLVE_FADE_OUT_MODEL_START_TIME	1.9f
-#define DISSOLVE_FADE_OUT_MODEL_END_TIME	2.0f
+#define DISSOLVE_FADE_OUT_MODEL_END_TIME	0.90f
 #define DISSOLVE_FADE_OUT_START_TIME		2.0f
-#define DISSOLVE_FADE_OUT_END_TIME			2.0f
+#define DISSOLVE_FADE_OUT_END_TIME			0.90f
 
 void C_TFRagdoll::ClientThink( void )
 {
@@ -1402,7 +1402,6 @@ void C_TFRagdoll::ClientThink( void )
 	{
 		if ( m_bDissolving )
 		{
-			// PLEASE JUTS COMPIEL GGODDAMN IT
 			m_bDissolving = false;
 			m_flTimeToDissolve = 1.2f;
 			DevMsg("AHHH IM DYING");
