@@ -1071,7 +1071,9 @@ bool C_BasePlayer::JustEnteredVehicle()
 //-----------------------------------------------------------------------------
 bool C_BasePlayer::IsInVGuiInputMode() const
 {
+
 	return (m_pCurrentVguiScreen.Get() != NULL);
+
 }
 
 //-----------------------------------------------------------------------------
@@ -1083,7 +1085,7 @@ bool C_BasePlayer::IsInViewModelVGuiInputMode() const
 
 	if ( !pScreenEnt )
 		return false;
-
+	EmitSound("Medic.AutoCallerAnnounce");
 	Assert( dynamic_cast<C_VGuiScreen*>(pScreenEnt) );
 	C_VGuiScreen *pVguiScreen = static_cast<C_VGuiScreen*>(pScreenEnt);
 
@@ -1093,6 +1095,7 @@ bool C_BasePlayer::IsInViewModelVGuiInputMode() const
 //-----------------------------------------------------------------------------
 // Check to see if we're in vgui input mode...
 //-----------------------------------------------------------------------------
+
 void C_BasePlayer::DetermineVguiInputMode( CUserCmd *pCmd )
 {
 	// If we're dead, close down and abort!

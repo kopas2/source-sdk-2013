@@ -1363,11 +1363,11 @@ bool C_TFRagdoll::IsRagdollVisible()
 	return true;
 }
 #define DISSOLVE_FADE_IN_START_TIME			0.0f
-#define DISSOLVE_FADE_IN_END_TIME			1.0f
-#define DISSOLVE_FADE_OUT_MODEL_START_TIME	1.9f
-#define DISSOLVE_FADE_OUT_MODEL_END_TIME	0.90f
+#define DISSOLVE_FADE_IN_END_TIME			0.50f
+#define DISSOLVE_FADE_OUT_MODEL_START_TIME	1.0f
+#define DISSOLVE_FADE_OUT_MODEL_END_TIME	1.5f
 #define DISSOLVE_FADE_OUT_START_TIME		2.0f
-#define DISSOLVE_FADE_OUT_END_TIME			0.90f
+#define DISSOLVE_FADE_OUT_END_TIME			2.5f
 
 void C_TFRagdoll::ClientThink( void )
 {
@@ -6050,7 +6050,7 @@ void C_TFPlayer::ClientThink()
 		// 
 		// Passtime ask for ball button
 		//
-	    if ( m_afButtonPressed & IN_ATTACK3 )
+	    if ( m_nButtons & IN_ATTACK3 )
 	    {
 		    engine->ClientCmd("voicemenu 1 8");
 	    }
