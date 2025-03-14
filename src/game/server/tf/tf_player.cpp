@@ -9759,12 +9759,17 @@ int CTFPlayer::OnTakeDamage( const CTakeDamageInfo &inputInfo )
 
 	if ( pWeapon && ( ( pWeapon->GetWeaponID() == TF_WEAPON_BAT_FISH ) || ( pWeapon->GetWeaponID() == TF_WEAPON_SLAP ) ) )
 	{
+		PrecacheScriptSound("Weapon_HolyMackerel.FishKill");
+		PrecacheScriptSound("Weapon_HolyMackerel.FishHit");
+
 		bool bDisguised = m_Shared.InCond( TF_COND_DISGUISED ) && pTFAttacker && ( m_Shared.GetDisguiseTeam() == pTFAttacker->GetTeamNumber() );
 		bool bFish = ( pWeapon->GetWeaponID() == TF_WEAPON_BAT_FISH );
 
 		if ( m_iHealth <= 0 )
 		{
 			info.SetDamageCustom( bFish ? TF_DMG_CUSTOM_FISH_KILL : TF_DMG_CUSTOM_SLAP_KILL );
+			engine->ServerCommand("say Uh oh! Looks like the meth is kickin' in!\n");
+			EmitSound("Weapon_HolyMackerel.FishKill");
 		}
 
 		if ( m_iHealth <= 0 || !bDisguised )
@@ -9778,6 +9783,9 @@ int CTFPlayer::OnTakeDamage( const CTakeDamageInfo &inputInfo )
 			}
 
 			TFGameRules()->DeathNotice( this, info, bFish ? ( iFishDamageOverride ? "fish_notice__arm" : "fish_notice" ) : "slap_notice" );
+			EmitSound("Weapon_HolyMackerel.FishHit");
+			engine->ServerCommand("say FISH!\n");
+
 		}
 	}
 

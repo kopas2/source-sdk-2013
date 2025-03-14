@@ -349,6 +349,41 @@
 	}
 }
 
+"Weapon_HolyMackerel.FishIntro"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/fishintro.wav"
+	}
+}
+
+"Weapon_HolyMackerel.FishKill"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/fishkill.wav"
+	}
+}
+
+
+"Weapon_HolyMackerel.FishHit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/fishhit.wav"
+	}
+}
+
+
 // ------------------------------------------------------------------------------------ //
 // BASEBALL BAT
 // ------------------------------------------------------------------------------------ //

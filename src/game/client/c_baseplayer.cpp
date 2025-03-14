@@ -1085,7 +1085,6 @@ bool C_BasePlayer::IsInViewModelVGuiInputMode() const
 
 	if ( !pScreenEnt )
 		return false;
-	EmitSound("Medic.AutoCallerAnnounce");
 	Assert( dynamic_cast<C_VGuiScreen*>(pScreenEnt) );
 	C_VGuiScreen *pVguiScreen = static_cast<C_VGuiScreen*>(pScreenEnt);
 

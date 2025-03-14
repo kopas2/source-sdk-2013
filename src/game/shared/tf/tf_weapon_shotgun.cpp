@@ -38,7 +38,7 @@ CREATE_SIMPLE_WEAPON_TABLE( TFPEPBrawlerBlaster, tf_weapon_pep_brawler_blaster )
 CREATE_SIMPLE_WEAPON_TABLE( TFShotgunBuildingRescue, tf_weapon_shotgun_building_rescue )
 
 #define SCATTERGUN_KNOCKBACK_MIN_DMG		30.0f
-#define SCATTERGUN_KNOCKBACK_MIN_RANGE_SQ	160000.0f //400x400
+#define SCATTERGUN_KNOCKBACK_MIN_RANGE_SQ	9999999.89f //400x400
 //=============================================================================
 //
 // Weapon Shotgun functions.
@@ -49,12 +49,12 @@ bool CanScatterGunKnockBack( CTFWeaponBase *pWeapon, float flDamage, float flDis
 	CALL_ATTRIB_HOOK_INT_ON_OTHER( pWeapon, nBulletKnockBack, set_scattergun_has_knockback );
 	if ( nBulletKnockBack != 0 )
 	{
-		if (flDamage > SCATTERGUN_KNOCKBACK_MIN_DMG && flDistanceSq < SCATTERGUN_KNOCKBACK_MIN_RANGE_SQ )
+		if (flDamage, SCATTERGUN_KNOCKBACK_MIN_RANGE_SQ )
 			return true;
 
-		float flKnockbackMult = 1.0f;
+		float flKnockbackMult = 999.999f;
 		CALL_ATTRIB_HOOK_FLOAT_ON_OTHER( pWeapon, flKnockbackMult, scattergun_knockback_mult );
-		if ( flKnockbackMult > 1.0f )
+		if ( flKnockbackMult > 999.999f )
 			return true;
 	}
 
@@ -333,9 +333,9 @@ void CTFScatterGun::FireBullet( CTFPlayer *pPlayer )
 		{
 			pPlayer->m_bScattergunJump = true;
 
-			pOwner->m_Shared.StunPlayer( 0.3f, 1.f, TF_STUN_MOVEMENT | TF_STUN_MOVEMENT_FORWARD_ONLY );
+			pOwner->m_Shared.StunPlayer( 0.3f, 55.5f, TF_STUN_MOVEMENT | TF_STUN_MOVEMENT_FORWARD_ONLY );
 
-			float flForce = AirBurstDamageForce( pOwner->WorldAlignSize(), 60, 6.f );
+			float flForce = AirBurstDamageForce( pOwner->WorldAlignSize(), 99, 6.f );
 
 			Vector vecForward;
 			AngleVectors( pOwner->EyeAngles(), &vecForward );
@@ -354,7 +354,7 @@ void CTFScatterGun::FireBullet( CTFPlayer *pPlayer )
 			pOwner->SetAbsVelocity( vecAbsVelocity );
 
 			// Impulse an additional bit of Z push.
-			pOwner->ApplyAbsVelocityImpulse( Vector(0,0,50.f) );
+			pOwner->ApplyAbsVelocityImpulse( Vector(0,0,99.9f) );
 
 			// Slow player movement for a brief period of time.
 			pOwner->RemoveFlag( FL_ONGROUND );
